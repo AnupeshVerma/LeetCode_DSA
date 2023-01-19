@@ -12,8 +12,8 @@ class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* a, ListNode* b) {
         ListNode *newhead= new ListNode;
-        ListNode *ans= new ListNode;
-        ans = newhead;
+        ListNode *tail= new ListNode;
+        tail = newhead;
 
 
         while(1)
@@ -21,12 +21,12 @@ public:
         // Agar dono me se ek khatam ho gyi to bachi wali ko direct jod denge
             if(a == NULL)
             {
-                newhead->next = b;
+                tail->next = b;
                 break;
             }               
             else if(b == NULL)
             {
-                newhead->next = a;
+                tail->next = a;
                 break;
             }
 
@@ -35,7 +35,7 @@ public:
                ListNode* temp = new ListNode;
                temp->val = a->val;
                a = a->next;
-               newhead->next = temp;
+               tail->next = temp;
                
                 
             }
@@ -44,10 +44,10 @@ public:
                ListNode* temp = new ListNode;
                temp->val = b->val;
                b = b->next;
-               newhead->next = temp;
+               tail->next = temp;
             }
-            newhead = newhead->next;
+            tail = tail->next;
         }
-    return ans->next;
+    return newhead->next;
     }
 };
