@@ -24,7 +24,26 @@ public:
 
     vector<int> preorderTraversal(TreeNode* root) {
         vector<int> ans;
-        pre(root, ans);
+         if(!root)
+            return ans;
+        
+        // ---------- RECURSIVE SOLUTION-----------
+        //pre(root, ans);
+        
+        // -----------ITERATIVE SOLUTION-----------
+       
+        stack<TreeNode*> s;
+        s.push(root);
+        
+        while(!s.empty())
+        {
+            auto temp = s.top();
+            s.pop();
+            
+            ans.push_back(temp->val);
+            if(temp->right) s.push(temp->right);
+            if(temp->left) s.push(temp->left);
+        }
         return ans;
         
     }
