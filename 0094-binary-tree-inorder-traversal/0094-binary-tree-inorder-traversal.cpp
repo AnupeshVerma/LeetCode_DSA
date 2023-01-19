@@ -24,7 +24,32 @@ public:
     }
     vector<int> inorderTraversal(TreeNode* root) {
         vector<int> ans;
-        in(root, ans);
+        if(!root)
+            return ans;
+        //-----------------Recursive Solution---------
+        //in(root, ans);
+        
+        //-----------------ITERATIVE SOLUTION---------
+        stack<TreeNode*>s;
+        
+        while(true)
+        {
+            if(root)
+            {
+                s.push(root);
+                root = root->left;
+            }
+            else
+            {
+                if(s.empty())
+                    break;
+                
+                root = s.top();
+                s.pop();
+                ans.push_back(root->val);
+                root = root->right;
+            }
+        }
         return ans;
     }
 };
