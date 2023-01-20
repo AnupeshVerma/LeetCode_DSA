@@ -17,10 +17,11 @@ public:
         if(!root)
             return 0;
         
-        int lh = height(root->left);
-        int rh = height(root->right);
+        int lh = height(root->left);    // Height of left tree
+        int rh = height(root->right);   // Height of right tree
         
-        int edges = lh + rh;
+        // edge between root and root->left isn't included that's why not subtract 1 form lh         to find the total edges 
+        int edges = lh + rh;         
         dia = max(edges, dia);
         
         return 1+max(lh, rh);
