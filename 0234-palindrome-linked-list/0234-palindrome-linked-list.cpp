@@ -10,7 +10,7 @@
  */
 class Solution {
 public:
-    ListNode* copy_head = new ListNode;
+      ListNode* copy_head = new ListNode;
     bool isPalindrome(ListNode* head) {
         
         //--------------ITERATIVE SOLUTION-----------------
