@@ -10,9 +10,11 @@
  */
 class Solution {
 public:
+    ListNode* copy_head = new ListNode;
     bool isPalindrome(ListNode* head) {
-        vector<int> v1;
         
+        //--------------ITERATIVE SOLUTION-----------------
+   /*     vector<int> v1;
         while(head)
         {
             v1.push_back(head->val);
@@ -21,5 +23,26 @@ public:
         vector<int> v2 = v1;
         reverse(v1.begin(), v1.end());
         return v1 == v2;
+        */
+        
+        //------------------RECURSIVE SOLUTION--------------
+        copy_head = head;
+        return solve(head);
     }
+    
+    bool solve(ListNode* curr)
+    {
+        if(!curr)
+            return true;
+        
+        if(!solve(curr->next))
+            return false;
+        
+        if(curr->val != copy_head->val)
+            return false;
+        
+        copy_head = copy_head->next;
+        return true;
+    }
+    
 };
