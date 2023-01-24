@@ -114,26 +114,23 @@ public:
                 ans.push_back(root->data);
                 
             (root->left) ? (left_boundary(root->left)) : left_boundary(root->right);
-           
         }
-       
     }
+    
     void right_boundary(Node* root)
     {
         vector<int> temp;
-        
-       while(root)
-       {
-           if(root->left || root->right)
+        while(root)
+        {
+            if(root->left || root->right)
                 temp.push_back(root->data);
                 
-            if(root->right) root = root->right;
-            else root = root->left;
-       }
-       for (int i=temp.size()-1; i>=0; i--)
+            (root->right) ? root = root->right : root = root->left;
+        }
+        for (int i=temp.size()-1; i>=0; i--)
             ans.push_back(temp[i]);
-           
     }
+    
     void add_leaves(Node* root)
     {
         if(!root->left && !root->right)
@@ -144,9 +141,9 @@ public:
         if(root->left) add_leaves(root->left);
         if(root->right) add_leaves(root->right);
     }
+    
     vector <int> boundary(Node *root)
     {
-        //Your code here
         if(!root->data)
             return ans;
         // If there is only one node that will add in add_leaves function,  no need to add here otherwise it will be added two times.
