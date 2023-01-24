@@ -106,19 +106,19 @@ struct Node
 class Solution {
 public:
     vector<int> ans;
-    void preorder(Node* root)
+    void left_boundary(Node* root)
     {
         if(root)
         {
             if(root->left || root->right)
                 ans.push_back(root->data);
                 
-            (root->left) ? (preorder(root->left)) : preorder(root->right);
+            (root->left) ? (left_boundary(root->left)) : left_boundary(root->right);
            
         }
        
     }
-    void postorder(Node* root)
+    void right_boundary(Node* root)
     {
         vector<int> temp;
         
@@ -153,9 +153,9 @@ public:
         if(root->left || root->right)
             ans.push_back(root->data);
        
-        preorder(root->left);
+        left_boundary(root->left);
         add_leaves(root);
-        postorder(root->right);
+        right_boundary(root->right);
         
         return ans;
         
