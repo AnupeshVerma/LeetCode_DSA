@@ -20,9 +20,8 @@ public:
             ans += to_string(sum%2);
         }
        if(carry)
-       {
            ans+=to_string(carry);
-       }
+      
         reverse(ans.begin(), ans.end());
                 
         return ans;
