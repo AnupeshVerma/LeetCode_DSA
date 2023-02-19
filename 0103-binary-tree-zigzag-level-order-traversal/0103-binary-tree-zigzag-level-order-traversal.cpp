@@ -15,34 +15,29 @@ public:
         vector<vector<int>> ans;
         if(!root)
             return ans;
-        
         queue<TreeNode*> q;
-        int layer_no = 1;
-        
+        int layer =0;
         q.push(root);
         
         while(!q.empty())
         {
-            layer_no++;
-            int size = q.size();
+            layer++;
             vector<int> v;
+            int size = q.size();
             
             for(int i=0; i<size; i++)
             {
-               
-                TreeNode* temp = q.front();
-                q.pop();
-                
+                auto temp = q.front();
                 v.push_back(temp->val);
+                q.pop();
                 
                 if(temp->left) q.push(temp->left);
                 if(temp->right) q.push(temp->right);
             }
-        
-            if(layer_no %2 != 0)
+            if(layer%2==0)
                 reverse(v.begin(), v.end());
             ans.push_back(v);
         }
         return ans;
-}
+    }
 };
