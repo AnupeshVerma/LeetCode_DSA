@@ -19,7 +19,6 @@ public:
         num = num*10 + root->val;
         if(!root->left && !root->right)
         {
-            cout<<num<<" ";
             ans += num;
             return;
         }
