@@ -31,10 +31,8 @@ public:
         {
             vector<int> temp;
             for(auto j:i.second)
-            {
                 for(auto k: j.second)
                     temp.push_back(k);
-            }
             ans.push_back(temp);
         }
         return ans;
