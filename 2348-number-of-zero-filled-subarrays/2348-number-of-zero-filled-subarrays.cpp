@@ -2,8 +2,7 @@ class Solution {
 public:
 
     long long zeroFilledSubarray(vector<int>& nums) {
-        long long zero=0;
-        long long ans=0;
+        long long zero=0, ans=0;
         for(auto i : nums)
         {
             if(i==0)
