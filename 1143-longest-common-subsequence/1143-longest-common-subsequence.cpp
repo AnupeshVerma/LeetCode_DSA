@@ -19,7 +19,7 @@ public:
         vector<vector<int>> dp(m+1, vector<int>(n+1, -1));
         
 //         Bottom-Up OR Memoization Approach
-        return bottomUp(s1, s2, m, n, dp);
+        // return bottomUp(s1, s2, m, n, dp);
         
 //         Top-Down Approach
         for(int i=0; i<m+1; i++)
@@ -35,5 +35,6 @@ public:
                 else
                     dp[i][j] = max(dp[i-1][j], dp[i][j-1]);
             }
+        return dp[m][n];
     }
 };
