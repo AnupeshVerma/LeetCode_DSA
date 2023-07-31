@@ -17,7 +17,7 @@ public:
         
         while((l1 || l2) || carry)
         {
-            int sum = 0;
+            int sum = carry;
             if(l1)
             {
                 sum+=l1->val;
@@ -29,7 +29,6 @@ public:
                 l2 = l2->next;
             }
             
-            sum+=carry;
             carry = sum/10;
             ListNode *newNode = new ListNode(sum%10);
             temp->next = newNode;
