@@ -4,9 +4,10 @@ class Solution {
     {
         vector<vector<int>>dp(n+1, vector<int>(m+1, 0));
         
+//         If s1 is nul, we have to add m words
         for (int i = 1; i <= n; i++)
             dp[i][0] = i; 
-
+//      If s2 is null, we have to delete n words;
         for (int j = 1; j <= m; j++)
             dp[0][j] = j; 
         
