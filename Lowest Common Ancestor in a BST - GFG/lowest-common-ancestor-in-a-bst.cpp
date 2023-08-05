@@ -21,23 +21,35 @@ class Solution{
     public:
         Node* LCA(Node *root, int n1, int n2)
         {
-            // code here
+             // ITERATIVE
             while(root)
             {
                 int val = root->data;
-                if((n1>val&&n2<val) || (n1<val&&n2>val))
-                    return root;
-                
-                if(val == n1 || val==n2)
-                    return root;
                 
                 if(n1>val && n2>val)
                     root = root->right;
                 else if(n1<val && n2<val)
                     root = root->left;
+                else
+                    return root;
             }    
         
         return NULL;
+        
+        
+        
+        // RECURSIVE
+        
+        if(!root)
+            return root;
+        
+        int val = root->data;
+        if(n1>val && n2>val)
+            return LCA(root->right, n1, n2);
+        else if(n1<val && n2<val)
+            return LCA(root->left, n1, n2);
+        else
+            return root;
         }
 };
 
