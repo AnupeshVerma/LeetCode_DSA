@@ -1,20 +1,28 @@
 class Solution {
-    public:
-int rec(vector<vector<int>>&m, int i, int p,vector<vector<int>>&d){
-        if(i>=m.size())return 0;
-        if(d[i][p]!=-1) return d[i][p];
-        int ans;
-        if(p<=m[i][1]) ans=max(rec(m,i+1,p,d),m[i][0]+rec(m,i+1,m[i][1],d));
-        else ans=rec(m,i+1,p,d);
-        return d[i][p]=ans;
+private:
+    int solve(vector<vector<int>>&scoreAge, vector<vector<int>>&dp, int i, int last_age)
+    {
+        if(i>=scoreAge.size())
+            return 0;
+        if(dp[i][last_age] != -1)
+            return dp[i][last_age];
+        
+        if(last_age<=scoreAge[i][1])
+            return dp[i][last_age] = max(scoreAge[i][0]+solve(scoreAge, dp, i+1, scoreAge[i][1]), solve(scoreAge, dp, i+1, last_age));
+        else
+            return dp[i][last_age] = solve(scoreAge, dp, i+1, last_age);
     }
-    int bestTeamScore(vector<int>&s, vector<int>&a) {
-        vector<vector<int>>m;
-        for(int i=0;i<s.size();i++){
-            m.push_back({s[i],a[i]});
-        }
-        vector<vector<int>>d(s.size()+1,vector<int>(1001,-1));
-        sort(m.begin(),m.end());
-        return rec(m,0,0,d);
+    
+public:
+    int bestTeamScore(vector<int>& scores, vector<int>& ages) {
+        int n = ages.size();
+        vector<vector<int>>dp(n+1, vector<int>(1001, -1));
+        
+        vector<vector<int>>scoreAge;
+        for(int i=0; i<n; i++)
+            scoreAge.push_back({scores[i], ages[i]});
+        
+        sort(scoreAge.begin(), scoreAge.end());
+        return solve(scoreAge, dp, 0, 0);
     }
 };
