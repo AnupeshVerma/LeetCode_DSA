@@ -5,9 +5,9 @@ public:
         int ans = INT_MAX;
         unordered_map<int, vector<int>>mp;
         
+//         Store index of all num in map and deduce how many numbers are in between
         for(int i=0; i<n; i++)
             mp[nums[i]].push_back(i);
-        
         
         for(auto [num, ind] : mp)
         {
@@ -16,9 +16,8 @@ public:
             int num_between = 0;
                 
             for(int i=1; i<ind.size(); i++)
-            {
                 num_between = max(ind[i]-ind[i-1]-1, num_between);
-            }
+
             int time = (num_between+1)/2;
             ans = min(time, ans);
         }
