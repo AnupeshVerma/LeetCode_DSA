@@ -1,14 +1,8 @@
 class Solution {
-public:
-    int numOfMinutes(int n, int headID, vector<int>& manager, vector<int>& informTime) {
-        vector<pair<int, int>>adj[n];
-        for(int i=0; i<n; i++)
-            if(manager[i] != -1)
-                adj[manager[i]].push_back({i, informTime[manager[i]]});
-            
-//     Using Djikstra's Algorithm
-        vector<int>time(n, 1e8);
-        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>>pq;
+    int Djikstra(vector<pair<int,int>>adj[], int n, int headID)
+    {
+         vector<int>time(n, 1e8);
+        priority_queue<pair<int, int>>pq;
         
         pq.push({0, headID});
         time[headID] = 0;
@@ -37,6 +31,16 @@ public:
             maxTime = max(maxTime, i);
         
         return maxTime;
+    }
+public:
+    int numOfMinutes(int n, int headID, vector<int>& manager, vector<int>& informTime) {
+        vector<pair<int, int>>adj[n];
+        for(int i=0; i<n; i++)
+            if(manager[i] != -1)
+                adj[manager[i]].push_back({i, informTime[manager[i]]});
+            
+//     Using Djikstra's Algorithm
+       return Djikstra(adj, n, headID);
                                            
     }
 };
