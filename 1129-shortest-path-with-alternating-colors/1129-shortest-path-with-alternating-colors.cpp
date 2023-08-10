@@ -10,19 +10,19 @@ public:
         
         vector<int> dist(n, 1e8);
         set<pair<int, int>>visited;
-        priority_queue<pair<int, pair<int,int>>, vector<pair<int, pair<int, int>>>, greater<pair<int, pair<int, int>>>>pq;
+        queue<pair<int, pair<int,int>>>q;
         
         dist[0] = 0;    // Distance of node zero = 0
         visited.insert({0, 0}); // Mark visited node 0 with red color
         visited.insert({0, 1}); // Mark visited node 0 with blue color
-        pq.push({0, {0, -1}});
+        q.push({0, {0, -1}});
         
-        while(!pq.empty())
+        while(!q.empty())
         {
-            int dis = pq.top().first;
-            int node = pq.top().second.first;
-            int color = pq.top().second.second;
-            pq.pop();
+            int dis = q.front().first;
+            int node = q.front().second.first;
+            int color = q.front().second.second;
+            q.pop();
             
             for(auto it : adj[node])
             {
@@ -33,7 +33,7 @@ public:
                     if(dis+1 <= dist[adjNode])
                         dist[adjNode] = dis+1;
                     visited.insert({adjNode, adjColor});
-                    pq.push({dis+1, {adjNode, adjColor}});
+                    q.push({dis+1, {adjNode, adjColor}});
                 }
             }
         }
