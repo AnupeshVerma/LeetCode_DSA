@@ -8,8 +8,9 @@ public:
         for(auto it:blueEdges)
             adj[it[0]].push_back({it[1], 1});
         
+// To ensure one node should not visited again with same color, take set storing {node,color}
         vector<int> dist(n, 1e8);
-        set<pair<int, int>>visited;
+        set<pair<int, int>>visited;   
         queue<pair<int, pair<int,int>>>q;
         
         dist[0] = 0;    // Distance of node zero = 0
