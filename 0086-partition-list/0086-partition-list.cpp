@@ -12,8 +12,6 @@ class Solution {
 public:
     ListNode* partition(ListNode* head, int x) {
         
-        
-//         Brute Force
         vector<int>low, high;
         ListNode *temp = head;
         
@@ -25,10 +23,8 @@ public:
                 high.push_back(temp->val);
             temp = temp->next;
         }
-        
-        
+
         temp = head;
-        
         for(int i=0; i<low.size(); i++)
         {
             temp->val = low[i];
@@ -40,5 +36,8 @@ public:
             temp = temp->next;
         }
         return head;
+        
     }
+//         You can also make two sub-linked list and connect them afterwards
+        
 };
