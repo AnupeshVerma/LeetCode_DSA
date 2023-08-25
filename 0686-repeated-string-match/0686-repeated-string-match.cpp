@@ -1,20 +1,19 @@
 class Solution {
 public:
     int repeatedStringMatch(string a, string b) {
-        int n = a.size();
-        int m = b.size();
-        int ans = 0;
-      
-        int count = m/n + 2;  // For front and back matching
+        int count = 0;
         string temp = "";
-        while(count--)
+        while(temp.size() < b.size())
         {
-           
+            count++;
             temp+=a;
-            ans++;
-            if(temp.find(b) != -1)
-                return ans;
         }
+        if(temp.find(b) != string::npos)
+            return count;
+
+        temp+=a;
+        if(temp.find(b) != -1)
+            return count+1;
         return -1;
     }
 };
