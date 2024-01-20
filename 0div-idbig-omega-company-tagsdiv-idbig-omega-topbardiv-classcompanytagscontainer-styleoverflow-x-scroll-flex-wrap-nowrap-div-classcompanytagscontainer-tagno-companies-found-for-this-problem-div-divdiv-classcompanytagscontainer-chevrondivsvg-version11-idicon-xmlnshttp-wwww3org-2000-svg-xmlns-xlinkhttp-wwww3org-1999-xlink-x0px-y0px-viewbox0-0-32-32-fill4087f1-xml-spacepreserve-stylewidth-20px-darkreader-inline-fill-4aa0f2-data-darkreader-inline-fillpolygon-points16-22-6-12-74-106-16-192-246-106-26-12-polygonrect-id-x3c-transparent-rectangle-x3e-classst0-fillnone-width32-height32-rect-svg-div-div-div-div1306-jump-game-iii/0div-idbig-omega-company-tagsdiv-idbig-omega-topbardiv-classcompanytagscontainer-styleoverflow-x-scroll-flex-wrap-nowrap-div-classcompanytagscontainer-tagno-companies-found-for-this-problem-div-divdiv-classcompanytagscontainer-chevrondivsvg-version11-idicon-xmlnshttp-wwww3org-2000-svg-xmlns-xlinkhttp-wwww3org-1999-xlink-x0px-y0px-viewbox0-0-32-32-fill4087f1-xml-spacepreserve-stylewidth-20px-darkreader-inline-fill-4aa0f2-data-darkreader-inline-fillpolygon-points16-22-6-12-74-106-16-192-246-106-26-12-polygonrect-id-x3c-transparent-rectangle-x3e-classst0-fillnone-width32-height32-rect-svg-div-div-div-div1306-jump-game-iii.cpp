@@ -1,5 +1,6 @@
 class Solution {
 public:
+//     ---------> Recursion <-------
     bool reach(vector<int>&arr, int start, int n, vector<int>& visited)
     {
         if(start<0 || start>n-1)
