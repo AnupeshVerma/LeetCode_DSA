@@ -1,7 +1,7 @@
 class Solution {
 public:
-    vector<int> findErrorNums(vector<int>& nums) {
-        int n = nums.size();
+    vector<int> hashMethod(vector<int> & nums, int n)
+    {
         vector<int> hash(n+1, 0);
         vector<int> ans;
         
@@ -17,5 +17,13 @@ public:
                 ans. push_back(i);
         
         return ans;
+    }
+    vector<int> findErrorNums(vector<int>& nums) {
+        int n = nums.size();
+        
+        return hashMethod(nums, n);
+        
+        
+       
     }
 };
