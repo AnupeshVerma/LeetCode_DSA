@@ -1,42 +1,35 @@
 class Solution {
 public:
-    int t[101];
-    int solve(vector<int>& nums, int i, int n) {
-        if(i > n)
+    int memo(vector<int>& nums, vector<int>& dp, int start, int end)
+    {
+        if(end < start)
             return 0;
         
-        if(t[i] != -1)
-            return t[i];
+        if(dp[start] != -1)
+            return dp[start];
         
-        int take = nums[i] + solve(nums, i+2, n); //steals ith house and moves to i+2 (because we can't steal adjacent)
-        int skip = solve(nums, i+1, n); //skips this house, now we can move to adjacent next house
+        int choose = memo(nums, dp, start+2, end) + nums[start];
+        int skip = memo(nums, dp, start+1, end);
         
-        return t[i]=max(take, skip);
+        return dp[start] = max(choose, skip);
+        
+        
     }
-    
     int rob(vector<int>& nums) {
         int n = nums.size();
         
         if(n == 1)
             return nums[0];
-        
-        if(n == 2)
+        if (n == 2)
             return max(nums[0], nums[1]);
         
-        memset(t, -1, sizeof(t));
+        vector<int> dp(n+1, -1);
+//         If first element is choosen
+        int firstChoosen = memo(nums, dp, 0, n-2);
+//         If last elemnet is choosen
+        dp.assign(n+1, -1);
+        int lastChoosen = memo(nums, dp, 1, n-1);
         
-        //case-1 - Take first house 0th index wala house
-        
-        int take_0th_index_house = solve(nums, 0, n-2);
-        
-        memset(t, -1, sizeof(t));
-        
-        //case-2  - Take second house 1st index wala house
-        int take_1st_index_house = solve(nums, 1, n-1);
-        
-        
-        return max(take_0th_index_house, take_1st_index_house);
-        
-        
+        return max(firstChoosen, lastChoosen);
     }
 };
