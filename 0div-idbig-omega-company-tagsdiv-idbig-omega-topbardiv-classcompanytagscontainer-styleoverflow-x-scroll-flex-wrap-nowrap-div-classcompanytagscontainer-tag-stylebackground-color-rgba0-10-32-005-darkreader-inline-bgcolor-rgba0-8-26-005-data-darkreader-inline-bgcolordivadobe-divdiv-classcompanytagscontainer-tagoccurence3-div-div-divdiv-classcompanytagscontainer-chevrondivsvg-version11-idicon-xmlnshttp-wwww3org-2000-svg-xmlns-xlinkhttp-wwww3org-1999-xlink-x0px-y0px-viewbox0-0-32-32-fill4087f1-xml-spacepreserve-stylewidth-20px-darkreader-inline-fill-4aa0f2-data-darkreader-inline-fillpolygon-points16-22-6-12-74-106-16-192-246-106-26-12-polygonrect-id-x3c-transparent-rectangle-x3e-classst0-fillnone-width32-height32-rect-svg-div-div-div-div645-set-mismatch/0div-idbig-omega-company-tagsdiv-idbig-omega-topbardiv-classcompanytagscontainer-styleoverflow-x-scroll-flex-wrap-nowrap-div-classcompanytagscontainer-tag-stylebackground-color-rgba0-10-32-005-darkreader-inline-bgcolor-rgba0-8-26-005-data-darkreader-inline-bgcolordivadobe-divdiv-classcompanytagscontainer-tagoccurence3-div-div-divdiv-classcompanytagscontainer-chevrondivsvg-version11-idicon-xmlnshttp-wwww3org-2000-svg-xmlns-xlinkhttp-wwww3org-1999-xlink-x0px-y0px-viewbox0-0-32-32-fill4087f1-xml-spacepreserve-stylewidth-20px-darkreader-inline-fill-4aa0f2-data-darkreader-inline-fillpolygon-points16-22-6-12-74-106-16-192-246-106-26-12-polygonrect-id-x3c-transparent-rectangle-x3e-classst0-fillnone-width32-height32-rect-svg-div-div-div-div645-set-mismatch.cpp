@@ -18,10 +18,30 @@ public:
         
         return ans;
     }
+    
+    vector<int> bruteForce(vector<int>& nums, int n)
+    {
+        int missing=0, repeat=0;
+        
+        sort(nums.begin(), nums.end());        
+        for(int i=1; i<=n; i++)
+        {
+            if(i<n && nums[i-1] == nums[i])
+                repeat = nums[i];
+            
+            if(find(nums.begin(), nums.end(), i) == nums.end())
+                missing = i;
+        }
+        return {repeat, missing};
+               
+    }
+    
     vector<int> findErrorNums(vector<int>& nums) {
         int n = nums.size();
         
-        return hashMethod(nums, n);
+        // return hashMethod(nums, n);
+        
+        return bruteForce(nums, n);
         
         
        
