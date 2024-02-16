@@ -1,8 +1,8 @@
 class Solution {
-public:
-    int nTime(vector<int>& cit)
+private:
+    int nTime(vector<int>& cit, int n)
     {
-        int ans = 0, n=cit.size();
+        int ans = 0;
         
         for(int i=n-1; i>=0; i--)
         {
@@ -13,8 +13,32 @@ public:
         }
         return ans;
     }
-    int hIndex(vector<int>& citations) {
+    
+    int lognTime(vector<int>&cit, int n)
+    {
+        int low=0, high=n-1, ans=0;
         
-        return nTime(citations);
+        while(low <= high)
+        {
+            int mid = (low+high)/2;
+            
+            if(cit[mid] >= n-mid)
+            {
+                ans = n-mid;
+                high = mid-1;
+            }
+            else
+                low = mid+1;
+        }
+        return ans;
+    }
+    
+public:
+    int hIndex(vector<int>& citations) {
+        int n = citations.size();
+        
+        // return nTime(citations, n);
+        
+        return lognTime(citations, n);
     }
 };
