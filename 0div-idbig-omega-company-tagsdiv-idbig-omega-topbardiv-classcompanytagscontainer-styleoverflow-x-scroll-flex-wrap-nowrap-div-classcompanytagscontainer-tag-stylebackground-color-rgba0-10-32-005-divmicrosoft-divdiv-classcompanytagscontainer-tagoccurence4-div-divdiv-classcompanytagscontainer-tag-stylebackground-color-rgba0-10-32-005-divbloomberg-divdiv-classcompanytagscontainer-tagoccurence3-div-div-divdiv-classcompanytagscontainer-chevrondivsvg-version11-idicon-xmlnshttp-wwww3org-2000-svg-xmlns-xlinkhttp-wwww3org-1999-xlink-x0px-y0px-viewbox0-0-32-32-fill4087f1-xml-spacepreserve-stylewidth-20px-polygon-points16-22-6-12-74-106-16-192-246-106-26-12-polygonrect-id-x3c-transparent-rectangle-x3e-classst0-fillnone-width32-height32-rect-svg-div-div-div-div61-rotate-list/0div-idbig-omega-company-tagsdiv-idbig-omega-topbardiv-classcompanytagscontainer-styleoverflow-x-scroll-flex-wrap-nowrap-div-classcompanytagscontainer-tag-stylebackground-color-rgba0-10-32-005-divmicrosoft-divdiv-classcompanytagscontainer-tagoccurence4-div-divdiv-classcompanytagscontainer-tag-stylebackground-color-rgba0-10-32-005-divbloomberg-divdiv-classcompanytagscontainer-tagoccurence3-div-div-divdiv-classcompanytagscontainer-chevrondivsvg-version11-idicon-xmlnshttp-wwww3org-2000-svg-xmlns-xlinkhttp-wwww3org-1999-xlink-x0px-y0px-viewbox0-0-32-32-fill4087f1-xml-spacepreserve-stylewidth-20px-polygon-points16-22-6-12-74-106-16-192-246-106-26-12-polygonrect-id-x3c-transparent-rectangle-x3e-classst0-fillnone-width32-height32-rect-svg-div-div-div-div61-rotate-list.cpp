@@ -34,9 +34,8 @@ private:
         ListNode* lastNodeAfterRotation = head;
         int index = n-k-1;
         while(index--)
-        {
          lastNodeAfterRotation = lastNodeAfterRotation->next;   
-        }
+        
         ListNode* newHead = lastNodeAfterRotation->next;
         lastNodeAfterRotation->next = NULL;
         lastNode->next = head;
