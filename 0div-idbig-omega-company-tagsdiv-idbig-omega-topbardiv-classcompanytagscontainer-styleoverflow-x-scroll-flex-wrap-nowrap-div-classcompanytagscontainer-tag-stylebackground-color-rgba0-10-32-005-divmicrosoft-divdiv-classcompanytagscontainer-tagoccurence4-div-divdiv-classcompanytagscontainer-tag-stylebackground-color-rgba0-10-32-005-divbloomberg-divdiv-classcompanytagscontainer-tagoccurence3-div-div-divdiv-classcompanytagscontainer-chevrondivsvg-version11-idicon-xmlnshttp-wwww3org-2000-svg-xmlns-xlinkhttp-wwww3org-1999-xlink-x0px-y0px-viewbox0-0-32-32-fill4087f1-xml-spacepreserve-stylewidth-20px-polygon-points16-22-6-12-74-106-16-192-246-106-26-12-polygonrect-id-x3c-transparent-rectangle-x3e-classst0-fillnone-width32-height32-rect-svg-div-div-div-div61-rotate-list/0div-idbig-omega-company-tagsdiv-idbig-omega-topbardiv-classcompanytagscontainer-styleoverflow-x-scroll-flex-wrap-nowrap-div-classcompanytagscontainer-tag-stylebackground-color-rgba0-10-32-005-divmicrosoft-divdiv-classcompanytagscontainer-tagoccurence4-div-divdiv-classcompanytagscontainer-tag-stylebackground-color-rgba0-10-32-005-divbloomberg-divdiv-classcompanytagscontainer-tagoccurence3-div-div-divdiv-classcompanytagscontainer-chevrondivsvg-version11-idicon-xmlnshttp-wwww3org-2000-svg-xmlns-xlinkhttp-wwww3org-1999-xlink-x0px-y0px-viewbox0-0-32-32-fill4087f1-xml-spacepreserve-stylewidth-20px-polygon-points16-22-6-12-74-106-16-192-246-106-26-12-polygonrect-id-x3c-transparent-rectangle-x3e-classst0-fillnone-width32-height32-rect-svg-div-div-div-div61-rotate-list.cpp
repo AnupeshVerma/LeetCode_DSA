@@ -9,22 +9,10 @@
  * };
  */
 class Solution {
-public:
-    ListNode* rotateRight(ListNode* head, int k) {
-        if(k==0 || !head)
-            return head;
-        
-        int n=0;
-        ListNode*temp=head;
-        while(temp)
-        {
-            n++;
-            temp = temp->next;
-        }
-        k = k % n;
-        if(k==0) return head;
-        
-        while(k--)
+private:
+    ListNode* method1(ListNode* head, int k)
+    {
+         while(k--)
         {
             int nextNodeValue=head->val;
             ListNode *curr=head;
@@ -38,7 +26,39 @@ public:
             }
             head->val = nextNodeValue;
         }
-        
         return head;
+    }
+    
+    ListNode* method2(ListNode* head, int k, int n, ListNode* lastNode)
+    {
+        ListNode* lastNodeAfterRotation = head;
+        int index = n-k-1;
+        while(index--)
+        {
+         lastNodeAfterRotation = lastNodeAfterRotation->next;   
+        }
+        ListNode* newHead = lastNodeAfterRotation->next;
+        lastNodeAfterRotation->next = NULL;
+        lastNode->next = head;
+        
+        return newHead;
+    }
+public:
+    ListNode* rotateRight(ListNode* head, int k) {
+        if(k==0 || !head)
+            return head;
+        
+        int n=1;
+        ListNode*lastNode=head;
+        while(lastNode->next)
+        {
+            n++;
+            lastNode = lastNode->next;
+        }
+        k = k % n;
+        if(k==0) return head;
+        
+        // return method1(head, k);
+        return method2(head, k, n, lastNode);
     }
 };
