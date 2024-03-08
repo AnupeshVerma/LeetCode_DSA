@@ -18,10 +18,30 @@ private:
 
         return ans;
     }
+    
+    int usingSort(vector<int>& nums)
+    {
+        vector<int>freq(101, 0);
+        
+        for(auto num:nums)
+            freq[num]++;
+        
+
+        sort(freq.begin(), freq.end());
+        
+        int n = 101;
+        int i = n-2, ans = freq[n-1]; cout<<ans;
+        while(i>=0 && freq[i]==freq[n-1])
+            ans += freq[i--];
+        
+        return ans;    
+    }
 public:
     int maxFrequencyElements(vector<int>& nums) {
        
         
-        return bruteForce(nums);
+        // return bruteForce(nums);
+        
+        return usingSort(nums);
     }
 };
