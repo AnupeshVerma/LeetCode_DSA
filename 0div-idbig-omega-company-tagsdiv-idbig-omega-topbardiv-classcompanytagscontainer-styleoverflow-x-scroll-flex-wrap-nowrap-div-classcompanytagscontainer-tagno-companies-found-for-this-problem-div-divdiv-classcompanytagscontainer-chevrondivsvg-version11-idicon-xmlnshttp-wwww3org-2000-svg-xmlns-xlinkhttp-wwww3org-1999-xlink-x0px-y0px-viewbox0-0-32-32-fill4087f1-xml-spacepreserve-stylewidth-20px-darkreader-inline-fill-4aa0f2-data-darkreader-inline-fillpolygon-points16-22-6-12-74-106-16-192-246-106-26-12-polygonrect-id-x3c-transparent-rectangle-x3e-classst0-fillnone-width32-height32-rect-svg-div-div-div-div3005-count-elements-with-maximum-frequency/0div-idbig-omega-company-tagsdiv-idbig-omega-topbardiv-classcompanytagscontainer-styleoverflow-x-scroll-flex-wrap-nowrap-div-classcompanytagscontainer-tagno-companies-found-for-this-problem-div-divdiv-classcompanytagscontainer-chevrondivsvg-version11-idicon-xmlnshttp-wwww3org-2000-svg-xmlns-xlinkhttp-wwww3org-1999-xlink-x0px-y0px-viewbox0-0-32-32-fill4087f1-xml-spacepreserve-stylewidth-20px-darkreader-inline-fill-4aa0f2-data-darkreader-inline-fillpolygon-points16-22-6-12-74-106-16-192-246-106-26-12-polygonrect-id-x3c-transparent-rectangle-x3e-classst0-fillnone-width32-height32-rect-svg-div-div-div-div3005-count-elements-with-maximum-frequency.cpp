@@ -36,12 +36,34 @@ private:
         
         return ans;    
     }
+    
+    int singleLoop(vector<int>& nums)
+    {
+        vector<int>freq(101, 0);
+        int maxFreq=0, ans=0;
+        
+        for(int num:nums)
+        {
+            freq[num]++;
+            
+            if(freq[num] > maxFreq)
+            {
+                maxFreq = freq[num];
+                ans = maxFreq;
+            }
+            else if(freq[num] == maxFreq)
+                ans += maxFreq;
+        }
+        return ans;
+    }
 public:
     int maxFrequencyElements(vector<int>& nums) {
        
         
         // return bruteForce(nums);
         
-        return usingSort(nums);
+        // return usingSort(nums);
+        
+        return singleLoop(nums);
     }
 };
