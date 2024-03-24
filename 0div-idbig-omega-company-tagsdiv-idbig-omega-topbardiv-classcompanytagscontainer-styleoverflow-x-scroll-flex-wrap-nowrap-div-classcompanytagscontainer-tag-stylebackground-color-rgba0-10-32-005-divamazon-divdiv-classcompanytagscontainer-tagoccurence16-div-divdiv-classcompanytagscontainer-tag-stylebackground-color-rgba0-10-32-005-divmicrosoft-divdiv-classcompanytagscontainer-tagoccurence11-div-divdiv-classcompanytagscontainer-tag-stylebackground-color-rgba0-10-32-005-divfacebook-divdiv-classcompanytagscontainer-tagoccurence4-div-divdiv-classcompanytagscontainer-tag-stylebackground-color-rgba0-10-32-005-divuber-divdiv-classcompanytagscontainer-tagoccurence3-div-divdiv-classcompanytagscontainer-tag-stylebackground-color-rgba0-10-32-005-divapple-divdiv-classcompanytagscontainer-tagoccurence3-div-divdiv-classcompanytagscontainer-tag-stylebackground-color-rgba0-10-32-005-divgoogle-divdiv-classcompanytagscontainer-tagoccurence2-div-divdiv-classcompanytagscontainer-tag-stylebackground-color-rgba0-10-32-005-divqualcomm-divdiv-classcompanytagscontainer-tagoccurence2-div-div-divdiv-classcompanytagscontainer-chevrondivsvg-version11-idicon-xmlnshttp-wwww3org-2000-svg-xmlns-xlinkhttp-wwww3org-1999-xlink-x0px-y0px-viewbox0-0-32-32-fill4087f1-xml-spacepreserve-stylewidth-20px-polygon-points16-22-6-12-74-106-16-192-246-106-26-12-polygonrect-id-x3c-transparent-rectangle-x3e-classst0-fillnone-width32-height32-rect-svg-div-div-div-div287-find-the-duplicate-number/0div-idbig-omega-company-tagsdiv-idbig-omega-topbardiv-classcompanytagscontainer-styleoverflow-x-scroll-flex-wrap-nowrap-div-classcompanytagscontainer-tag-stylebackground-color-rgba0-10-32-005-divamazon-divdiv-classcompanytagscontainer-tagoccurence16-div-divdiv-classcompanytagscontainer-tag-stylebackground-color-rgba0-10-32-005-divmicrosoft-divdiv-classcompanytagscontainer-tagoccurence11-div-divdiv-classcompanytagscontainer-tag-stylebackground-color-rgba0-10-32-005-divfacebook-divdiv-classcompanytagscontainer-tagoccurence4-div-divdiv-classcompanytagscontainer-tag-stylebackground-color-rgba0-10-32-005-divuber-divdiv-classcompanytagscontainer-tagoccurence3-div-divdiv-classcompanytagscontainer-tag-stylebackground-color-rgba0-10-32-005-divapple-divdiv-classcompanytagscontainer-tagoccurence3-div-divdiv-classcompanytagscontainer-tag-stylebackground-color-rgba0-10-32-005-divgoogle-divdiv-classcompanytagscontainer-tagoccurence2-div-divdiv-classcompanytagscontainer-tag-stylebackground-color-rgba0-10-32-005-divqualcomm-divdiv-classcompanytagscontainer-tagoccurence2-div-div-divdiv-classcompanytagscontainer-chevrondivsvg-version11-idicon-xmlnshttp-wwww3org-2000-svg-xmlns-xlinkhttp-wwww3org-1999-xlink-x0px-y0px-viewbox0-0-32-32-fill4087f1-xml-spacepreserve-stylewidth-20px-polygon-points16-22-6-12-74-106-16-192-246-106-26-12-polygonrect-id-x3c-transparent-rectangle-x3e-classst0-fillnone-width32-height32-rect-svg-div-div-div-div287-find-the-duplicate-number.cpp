@@ -8,6 +8,18 @@ private:
                 return nums[i];
         return -1;
     }
+    int hashMap(vector<int>& nums, int n)
+    {
+        unordered_map<int, int> freq;
+        
+        for(int num:nums)
+        {
+            freq[num]++;
+            if(freq[num] > 1)
+                return num;
+        }
+        return 0;
+    }
     int tortoiseAndHare(vector<int>& nums, int n)
     {
         int tortoise = nums[0];
@@ -38,7 +50,9 @@ public:
         
         // return bruteForce(nums, n);
         
-        return tortoiseAndHare(nums, n);
+        return hashMap(nums, n);
+        
+        // return tortoiseAndHare(nums, n);
         
     }
 };
