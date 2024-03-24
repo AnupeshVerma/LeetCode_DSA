@@ -8,11 +8,37 @@ private:
                 return nums[i];
         return -1;
     }
+    int tortoiseAndHare(vector<int>& nums, int n)
+    {
+        int tortoise = nums[0];
+        int hare = nums[0];
+    
+        // Phase 1: Detect if there's a cycle (find first meet point)
+       do
+        {
+            tortoise = nums[tortoise];
+            hare = nums[nums[hare]];
+        } while(tortoise != hare);
+        // Phase 2: Find the start of the cycle
+        // Distance from first node to starting of the cycle and first meet node to start node will be same
+        tortoise = nums[0];
+        while(tortoise != hare)
+        {
+            tortoise = nums[tortoise];
+            hare = nums[hare];
+        }
+        
+        return hare;
+    }
+    
+        
 public:
     int findDuplicate(vector<int>& nums) {
         int n = nums.size();
         
-        return bruteForce(nums, n);
+        // return bruteForce(nums, n);
+        
+        return tortoiseAndHare(nums, n);
         
     }
 };
