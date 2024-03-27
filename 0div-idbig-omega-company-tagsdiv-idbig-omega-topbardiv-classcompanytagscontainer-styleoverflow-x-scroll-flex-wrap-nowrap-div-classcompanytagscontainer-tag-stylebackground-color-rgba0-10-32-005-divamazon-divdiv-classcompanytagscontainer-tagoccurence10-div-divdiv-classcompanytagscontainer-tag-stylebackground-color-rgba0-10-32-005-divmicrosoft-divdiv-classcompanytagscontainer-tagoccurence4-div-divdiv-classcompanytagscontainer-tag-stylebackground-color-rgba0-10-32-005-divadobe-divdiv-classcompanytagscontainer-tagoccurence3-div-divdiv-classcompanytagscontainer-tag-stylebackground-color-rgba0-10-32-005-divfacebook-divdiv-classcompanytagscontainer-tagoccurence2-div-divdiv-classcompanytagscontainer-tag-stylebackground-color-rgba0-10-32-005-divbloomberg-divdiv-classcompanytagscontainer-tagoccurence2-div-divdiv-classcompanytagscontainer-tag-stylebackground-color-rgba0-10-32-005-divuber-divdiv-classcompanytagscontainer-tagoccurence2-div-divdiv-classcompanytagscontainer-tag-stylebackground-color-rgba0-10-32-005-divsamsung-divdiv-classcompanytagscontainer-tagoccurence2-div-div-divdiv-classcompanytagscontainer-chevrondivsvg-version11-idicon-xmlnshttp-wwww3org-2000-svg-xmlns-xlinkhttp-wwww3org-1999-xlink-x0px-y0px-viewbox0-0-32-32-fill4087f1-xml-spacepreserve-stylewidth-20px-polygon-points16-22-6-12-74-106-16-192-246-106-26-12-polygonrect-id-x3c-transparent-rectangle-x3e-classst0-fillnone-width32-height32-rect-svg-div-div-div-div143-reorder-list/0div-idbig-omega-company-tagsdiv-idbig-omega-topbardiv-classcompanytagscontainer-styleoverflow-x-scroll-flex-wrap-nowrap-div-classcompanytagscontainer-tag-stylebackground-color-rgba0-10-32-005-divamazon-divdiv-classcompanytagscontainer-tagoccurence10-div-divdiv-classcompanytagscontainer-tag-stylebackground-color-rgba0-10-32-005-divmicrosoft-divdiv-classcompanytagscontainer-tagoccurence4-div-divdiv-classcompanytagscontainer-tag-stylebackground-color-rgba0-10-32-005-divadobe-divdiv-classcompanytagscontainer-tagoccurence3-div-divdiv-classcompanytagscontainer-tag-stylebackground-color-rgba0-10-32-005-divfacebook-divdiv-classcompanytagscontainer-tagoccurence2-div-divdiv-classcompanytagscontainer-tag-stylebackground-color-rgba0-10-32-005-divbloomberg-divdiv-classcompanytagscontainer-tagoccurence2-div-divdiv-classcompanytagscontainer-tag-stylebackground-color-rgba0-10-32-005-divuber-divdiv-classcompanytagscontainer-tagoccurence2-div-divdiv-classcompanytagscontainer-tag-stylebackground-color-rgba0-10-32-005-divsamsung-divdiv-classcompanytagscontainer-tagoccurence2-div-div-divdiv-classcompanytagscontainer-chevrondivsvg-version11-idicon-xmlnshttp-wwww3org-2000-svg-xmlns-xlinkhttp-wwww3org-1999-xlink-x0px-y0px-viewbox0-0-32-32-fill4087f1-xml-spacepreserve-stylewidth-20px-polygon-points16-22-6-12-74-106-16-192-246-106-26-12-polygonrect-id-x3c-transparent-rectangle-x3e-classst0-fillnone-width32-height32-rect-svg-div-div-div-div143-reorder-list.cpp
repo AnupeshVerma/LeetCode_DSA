@@ -30,14 +30,14 @@ private:
             temp->next = new ListNode(list[i]);
             temp = temp->next;
             temp->next = new ListNode(list[n-i-1]);
-             temp = temp->next;
+            temp = temp->next;
         }
        
         if(n%2 != 0 )
-            temp->next = new ListNode(list[i]);
-        
-        
+            temp->next = new ListNode(list[i]);      
     }
+    
+    
 public:
     void reorderList(ListNode* head) {
         if(!head->next)
