@@ -44,37 +44,36 @@ private:
     
      int slidingWindowOnePass(vector<int>& nums, int k, int n)
     {
-        int currCount = 0, totalCount = 0;
-        int front=0, back=0;
-       vector<int>distinctCount(n+1, 0);
+        int currCount=0, totalCount=0;
+        int front=0, back=0, distinct=0;
+       unordered_map<int, int>freq;
         
         while(front < n)
         {
-            distinctCount[nums[front]]++;
+            freq[nums[front]]++;
             
             // If there is a new element, decrement k
-            if(distinctCount[nums[front]] == 1)
-                k--;
+            if(freq[nums[front]] == 1)
+                distinct++;
             
             // Move back pointer until k becomes valid again
-            if(k<0)
+            if(distinct > k)
             {
-                distinctCount[nums[back++]]--;
-                k++;
+                freq[nums[back++]]--;
+                distinct--;
                 currCount = 0;
             }
             
             // If k becomes zero, calculate subarrays
-            if(k == 0)
+            if(distinct == k)
             {
-                while(distinctCount[nums[back]] > 1)
+                // If any num have frequency zero, break loop
+                while(freq[nums[back]] > 1)
                 {
-                    distinctCount[nums[back++]]--;
+                    freq[nums[back++]]--;
                     currCount++;
                 }
-            
-            
-            totalCount += currCount + 1;
+                totalCount += currCount + 1;
             }
             front++;
         }
