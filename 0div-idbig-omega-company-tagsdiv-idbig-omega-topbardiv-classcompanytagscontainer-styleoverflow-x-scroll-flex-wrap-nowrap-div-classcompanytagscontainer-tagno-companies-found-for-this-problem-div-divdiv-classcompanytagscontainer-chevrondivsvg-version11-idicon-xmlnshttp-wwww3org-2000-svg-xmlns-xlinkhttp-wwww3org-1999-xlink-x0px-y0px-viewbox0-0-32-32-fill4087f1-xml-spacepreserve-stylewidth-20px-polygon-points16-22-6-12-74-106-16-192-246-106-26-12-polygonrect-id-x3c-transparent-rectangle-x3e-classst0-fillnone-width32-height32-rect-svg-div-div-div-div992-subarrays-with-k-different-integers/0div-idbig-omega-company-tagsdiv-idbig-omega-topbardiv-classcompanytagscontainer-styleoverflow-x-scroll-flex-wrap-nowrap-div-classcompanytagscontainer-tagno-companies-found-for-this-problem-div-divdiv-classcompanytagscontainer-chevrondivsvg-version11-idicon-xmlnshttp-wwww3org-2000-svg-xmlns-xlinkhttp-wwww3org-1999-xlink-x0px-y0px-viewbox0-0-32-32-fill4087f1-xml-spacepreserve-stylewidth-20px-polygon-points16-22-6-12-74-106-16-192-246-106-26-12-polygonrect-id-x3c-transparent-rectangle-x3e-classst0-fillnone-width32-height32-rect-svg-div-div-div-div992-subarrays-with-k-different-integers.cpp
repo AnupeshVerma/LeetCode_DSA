@@ -42,12 +42,53 @@ private:
         return count;
     }
     
+     int slidingWindowOnePass(vector<int>& nums, int k, int n)
+    {
+        int currCount = 0, totalCount = 0;
+        int front=0, back=0;
+       vector<int>distinctCount(n+1, 0);
+        
+        while(front < n)
+        {
+            distinctCount[nums[front]]++;
+            
+            // If there is a new element, decrement k
+            if(distinctCount[nums[front]] == 1)
+                k--;
+            
+            // Move back pointer until k becomes valid again
+            if(k<0)
+            {
+                distinctCount[nums[back++]]--;
+                k++;
+                currCount = 0;
+            }
+            
+            // If k becomes zero, calculate subarrays
+            if(k == 0)
+            {
+                while(distinctCount[nums[back]] > 1)
+                {
+                    distinctCount[nums[back++]]--;
+                    currCount++;
+                }
+            
+            
+            totalCount += currCount + 1;
+            }
+            front++;
+        }
+        return totalCount;
+    }
+    
 public:
     int subarraysWithKDistinct(vector<int>& nums, int k) {
         int n = nums.size();
         
         // return bruteForce(nums, k, n);
         
-        return slidingWindow(nums, k, n) - slidingWindow(nums, k-1, n);
+        // return slidingWindow(nums, k, n) - slidingWindow(nums, k-1, n);
+        
+        return slidingWindowOnePass(nums, k, n);
     }
 };
