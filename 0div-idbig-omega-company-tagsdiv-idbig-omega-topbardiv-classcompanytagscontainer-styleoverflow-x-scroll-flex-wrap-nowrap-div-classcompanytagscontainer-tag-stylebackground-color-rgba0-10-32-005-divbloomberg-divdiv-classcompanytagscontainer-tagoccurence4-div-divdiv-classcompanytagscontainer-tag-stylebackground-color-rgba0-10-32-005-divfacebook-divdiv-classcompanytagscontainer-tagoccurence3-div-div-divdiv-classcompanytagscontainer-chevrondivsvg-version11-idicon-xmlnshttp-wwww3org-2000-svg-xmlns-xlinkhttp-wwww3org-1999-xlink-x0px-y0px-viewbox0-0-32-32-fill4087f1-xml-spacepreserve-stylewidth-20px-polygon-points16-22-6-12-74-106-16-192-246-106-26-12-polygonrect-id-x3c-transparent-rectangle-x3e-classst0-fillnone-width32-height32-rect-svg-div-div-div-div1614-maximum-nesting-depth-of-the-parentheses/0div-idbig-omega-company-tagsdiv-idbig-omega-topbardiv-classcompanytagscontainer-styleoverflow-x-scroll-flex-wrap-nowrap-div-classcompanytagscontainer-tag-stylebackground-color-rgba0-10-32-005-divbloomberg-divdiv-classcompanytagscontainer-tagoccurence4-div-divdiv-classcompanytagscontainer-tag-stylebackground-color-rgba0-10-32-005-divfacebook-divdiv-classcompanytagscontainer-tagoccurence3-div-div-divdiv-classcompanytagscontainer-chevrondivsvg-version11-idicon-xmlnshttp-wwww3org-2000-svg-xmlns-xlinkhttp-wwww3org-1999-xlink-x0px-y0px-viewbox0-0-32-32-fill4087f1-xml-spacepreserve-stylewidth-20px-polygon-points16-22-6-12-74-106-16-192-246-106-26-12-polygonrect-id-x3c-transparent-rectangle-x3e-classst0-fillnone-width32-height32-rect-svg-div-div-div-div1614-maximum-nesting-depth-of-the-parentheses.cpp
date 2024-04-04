@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int usingStack(string s)
+    int solve(string s)
     {
         int open=0, depth=0;
         for(char c:s)
@@ -16,6 +16,8 @@ public:
 public:
     int maxDepth(string s) {
         
-        return usingStack(s);
+        return solve(s);
+        
+        // We can also use stack for this
     }
 };
