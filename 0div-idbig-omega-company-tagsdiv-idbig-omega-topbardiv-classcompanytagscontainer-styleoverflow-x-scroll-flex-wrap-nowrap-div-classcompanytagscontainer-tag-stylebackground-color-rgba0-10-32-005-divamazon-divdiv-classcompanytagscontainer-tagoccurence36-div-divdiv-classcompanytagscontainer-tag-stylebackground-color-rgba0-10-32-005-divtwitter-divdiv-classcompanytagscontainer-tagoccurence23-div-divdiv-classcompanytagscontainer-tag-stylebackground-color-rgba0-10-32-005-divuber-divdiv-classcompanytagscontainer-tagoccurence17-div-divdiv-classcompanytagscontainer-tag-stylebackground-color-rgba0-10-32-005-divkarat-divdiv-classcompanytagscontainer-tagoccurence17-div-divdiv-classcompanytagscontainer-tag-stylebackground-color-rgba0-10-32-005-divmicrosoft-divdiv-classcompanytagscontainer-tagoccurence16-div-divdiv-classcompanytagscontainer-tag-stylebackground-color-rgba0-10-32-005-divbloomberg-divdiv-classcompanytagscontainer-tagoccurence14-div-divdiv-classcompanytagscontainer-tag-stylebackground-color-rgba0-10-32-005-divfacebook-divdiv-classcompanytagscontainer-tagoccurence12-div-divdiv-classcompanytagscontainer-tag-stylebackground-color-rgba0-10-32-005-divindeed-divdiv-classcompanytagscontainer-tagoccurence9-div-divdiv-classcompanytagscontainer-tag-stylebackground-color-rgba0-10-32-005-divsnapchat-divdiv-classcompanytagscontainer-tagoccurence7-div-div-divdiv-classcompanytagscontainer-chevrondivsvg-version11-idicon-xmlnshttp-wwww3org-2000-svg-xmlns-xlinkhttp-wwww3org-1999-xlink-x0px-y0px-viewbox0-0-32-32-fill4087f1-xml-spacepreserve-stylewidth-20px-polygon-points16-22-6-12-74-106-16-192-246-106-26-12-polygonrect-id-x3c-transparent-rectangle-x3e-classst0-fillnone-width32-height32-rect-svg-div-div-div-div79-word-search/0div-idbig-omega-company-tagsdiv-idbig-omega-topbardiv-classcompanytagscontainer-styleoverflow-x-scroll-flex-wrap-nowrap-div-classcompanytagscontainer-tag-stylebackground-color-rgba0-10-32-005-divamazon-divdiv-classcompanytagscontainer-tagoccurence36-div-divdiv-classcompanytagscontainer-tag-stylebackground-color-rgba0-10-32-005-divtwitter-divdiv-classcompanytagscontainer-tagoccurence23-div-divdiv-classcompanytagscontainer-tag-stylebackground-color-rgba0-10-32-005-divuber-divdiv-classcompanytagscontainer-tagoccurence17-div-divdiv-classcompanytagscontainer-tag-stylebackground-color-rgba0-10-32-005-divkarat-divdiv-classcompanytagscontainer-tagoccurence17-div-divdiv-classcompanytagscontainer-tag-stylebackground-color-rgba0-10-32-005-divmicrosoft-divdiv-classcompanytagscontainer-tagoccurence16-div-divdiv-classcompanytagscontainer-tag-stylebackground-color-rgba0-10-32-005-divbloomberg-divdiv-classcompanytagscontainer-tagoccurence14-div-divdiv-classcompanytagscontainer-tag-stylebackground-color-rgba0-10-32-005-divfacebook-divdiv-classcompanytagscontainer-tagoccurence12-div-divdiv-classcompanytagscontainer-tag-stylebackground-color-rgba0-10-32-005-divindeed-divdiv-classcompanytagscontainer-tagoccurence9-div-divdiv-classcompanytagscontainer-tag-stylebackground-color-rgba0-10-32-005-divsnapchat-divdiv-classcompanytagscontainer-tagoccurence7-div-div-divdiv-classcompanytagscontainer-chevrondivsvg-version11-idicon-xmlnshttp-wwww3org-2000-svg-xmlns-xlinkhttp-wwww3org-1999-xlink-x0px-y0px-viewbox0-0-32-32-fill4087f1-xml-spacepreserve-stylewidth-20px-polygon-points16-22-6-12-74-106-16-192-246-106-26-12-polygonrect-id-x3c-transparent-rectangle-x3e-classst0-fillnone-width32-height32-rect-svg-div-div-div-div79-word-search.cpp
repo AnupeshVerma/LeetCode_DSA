@@ -1,46 +1,38 @@
 class Solution {
-public:
-
-    bool dfs(int i, int j, vector<vector<char>>& board, string &word, int idx, vector<vector<bool>> &vis)
-    {
-        if(idx == word.size()) return true;
-
-        if(i < 0 || j < 0 || i >= board.size() || j >= board[0].size() || vis[i][j])
-        {
+private:
+    bool dfs(vector<vector<char>>& board, string word, int row, int col, int ind, int n)
+    {   
+        if(ind >= n)
+            return true;
+         if(row<0 || row>=board.size() || col<0 || col>=board[0].size())
             return false;
-        }
-
-        if(board[i][j] != word[idx])
-        {
+        
+        char ch = board[row][col];
+        if(ch != word[ind])
             return false;
+        else
+        {
+            board[row][col] = '-';
+            bool up    = dfs(board, word, row-1, col, ind+1, n);
+            bool right = dfs(board, word, row, col+1, ind+1, n);
+            bool down  = dfs(board, word, row+1, col, ind+1, n);
+            bool left  = dfs(board, word, row, col-1, ind+1, n);
+            
+            board[row][col] = ch;
+            return up || right || down || left;
         }
-
-        vis[i][j] = true;
-        bool up = dfs(i - 1, j, board, word, idx + 1, vis);
-        bool down = dfs(i + 1, j, board, word, idx + 1, vis);
-        bool right = dfs(i, j + 1, board, word, idx + 1, vis);
-        bool left = dfs(i, j - 1, board, word, idx + 1, vis);
-        vis[i][j] = false;
-
-        return (up | down | right | left);
+        
+        
     }
+public:
     bool exist(vector<vector<char>>& board, string word) {
         
-        int n = board.size();
-        int m = board[0].size();
-
-        vector<vector<bool>> vis(n,vector<bool>(m,false));
-        for(int i = 0; i < n; i++)
-        {
-            bool ret = false;
-            for(int j = 0; j < m; j++)
+        int ans = false;
+        for(int row=0; row<board.size(); row++)
+            for(int col=0; col<board[0].size(); col++)
             {
-                ret = dfs(i, j, board, word, 0, vis);
-
-                if(ret) return true;
+                ans = ans || dfs(board, word, row, col, 0, word.size());
             }
-        }
-
-        return false;
+        return ans;
     }
 };
