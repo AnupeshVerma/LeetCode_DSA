@@ -3,8 +3,6 @@ private:
     int bruteForce(vector<int>& tickets, int k, int n)
     {
         int time = 0;
-        if(tickets[k] == 1)
-            return k+1;
         
         while(tickets[k] != 0)
         {
@@ -20,11 +18,30 @@ private:
         }
         return time;
     }
+    
+    int onePass(vector<int>& tickets, int k, int n)
+    {
+        int time = 0;
+        
+        for(int i=0; i<n; i++)
+        {
+            if(i<=k)
+                time += min(tickets[k], tickets[i]);
+            else
+                time += min(tickets[k]-1, tickets[i]);
+        }
+        return time;
+            
+    }
 public:
     int timeRequiredToBuy(vector<int>& tickets, int k) {
+        if(tickets[k] == 1)
+            return k+1;
+        
         int n = tickets.size();
         
+        // return bruteForce(tickets, k, n);
         
-        return bruteForce(tickets, k, n);
+        return onePass(tickets, k, n);
     }
 };
