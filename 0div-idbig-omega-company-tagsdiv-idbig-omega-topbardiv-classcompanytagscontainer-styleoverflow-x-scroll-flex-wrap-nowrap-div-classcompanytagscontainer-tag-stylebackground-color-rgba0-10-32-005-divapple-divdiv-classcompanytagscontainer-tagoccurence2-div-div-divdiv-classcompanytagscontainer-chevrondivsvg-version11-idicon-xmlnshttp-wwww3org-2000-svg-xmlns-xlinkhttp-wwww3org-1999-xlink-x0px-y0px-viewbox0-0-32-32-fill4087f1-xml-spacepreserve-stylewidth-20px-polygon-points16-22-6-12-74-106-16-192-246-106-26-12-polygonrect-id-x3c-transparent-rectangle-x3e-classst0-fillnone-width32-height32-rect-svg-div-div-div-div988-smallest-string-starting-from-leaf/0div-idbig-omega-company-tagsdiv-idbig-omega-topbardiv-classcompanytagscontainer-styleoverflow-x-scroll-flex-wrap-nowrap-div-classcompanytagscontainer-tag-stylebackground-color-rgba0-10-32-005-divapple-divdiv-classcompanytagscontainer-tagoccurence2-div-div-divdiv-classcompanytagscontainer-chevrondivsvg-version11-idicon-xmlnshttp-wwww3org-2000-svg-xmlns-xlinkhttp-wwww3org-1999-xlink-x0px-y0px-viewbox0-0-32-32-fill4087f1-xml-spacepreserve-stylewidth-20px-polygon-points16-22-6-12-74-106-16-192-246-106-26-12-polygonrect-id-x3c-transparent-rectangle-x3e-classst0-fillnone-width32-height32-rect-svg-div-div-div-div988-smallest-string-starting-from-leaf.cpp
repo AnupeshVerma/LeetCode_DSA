@@ -12,7 +12,7 @@
 class Solution {
     string ans = "";
 private:
-    void solve(TreeNode* root, string temp)
+    void dfs(TreeNode* root, string temp)
     {
         if(!root)
             return;
@@ -22,13 +22,13 @@ private:
             if(ans=="" || ans>temp)
                 ans = temp;
         
-        solve(root->left, temp);
-        solve(root->right, temp);
+        dfs(root->left, temp);
+        dfs(root->right, temp);
     }
 public:
     string smallestFromLeaf(TreeNode* root) {
         
-        solve(root, "");
+        dfs(root, "");
         return ans;
     }
 };
