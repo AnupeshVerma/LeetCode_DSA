@@ -1,6 +1,7 @@
 class Solution {
-public:
-    string minRemoveToMakeValid(string s) {
+private:
+    string solve(string s)
+    {
         stack<char>st;
         int leftParen=0;
         int rightParen=0;
@@ -30,5 +31,46 @@ public:
         }
         reverse(ans.begin(), ans.end());
         return ans;
+    }
+    
+    string usingStack(string s)
+    {
+        // Stack stores the indexes of '('
+        unordered_set<int>remove;
+        stack<int>st;
+        for(int i=0; i<s.size(); i++)
+        {
+            if(s[i]=='(')
+                st.push(i);
+            else if(s[i]==')')
+            {
+                if(st.empty())
+                    remove.insert(i);
+                else
+                    st.pop();
+            }
+        }
+        
+        while(!st.empty())
+        {
+            remove.insert(st.top());
+            st.pop();
+        }
+        
+        string ans = "";
+        for(int i=0; i<s.size(); i++)
+        {
+            if(remove.find(i) != remove.end())
+                continue;
+            ans += s[i];
+        }
+        return ans;
+    }
+public:
+    string minRemoveToMakeValid(string s) {
+        
+        // return solve(s);
+        
+        return usingStack(s);
     }
 };
