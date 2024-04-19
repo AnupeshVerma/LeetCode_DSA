@@ -4,12 +4,29 @@ private:
     int drow[4] = {-1, 0, 1, 0};
     int dcol[4] = {0, 1, 0, -1};
     
-    int bfs(vector<vector<char>>& grid)
+    void bfs(vector<vector<char>>& grid, int row, int col, vector<vector<int>>& visited)
     {
         queue<pair<int, int>>q;
-       
+        visited[row][col] = 1;
+        q.push({row, col});
         
-        return 0;
+        while(!q.empty())
+        {
+            auto [row, col] = q.front();
+            q.pop();
+            for(int i=0; i<4; i++)
+            {
+                int newRow = row + drow[i];
+                int newCol = col + dcol[i];
+                
+                if(newRow>=0 && newRow<m && newCol>=0 && newCol<n)
+                    if(!visited[newRow][newCol] && grid[newRow][newCol]=='1')
+                    {
+                        visited[newRow][newCol] = 1;
+                        q.push({newRow, newCol});
+                    }
+            }
+        }
     }
     void dfs(vector<vector<char>>& grid, int row, int col, vector<vector<int>>& visited)
     {
@@ -21,9 +38,7 @@ private:
             
             if(newRow>=0 && newRow<m && newCol>=0 && newCol<n)
                 if(!visited[newRow][newCol] && grid[newRow][newCol]=='1')
-                {
                     dfs(grid, newRow, newCol, visited);
-                }
         }
     }
 public:
@@ -39,8 +54,10 @@ public:
             {
                 if(grid[row][col] == '1' && !visited[row][col])
                 {
-                    ans++;cout<<row<<" "<<col;
-                    dfs(grid, row, col, visited);
+                    ans++,
+                    // dfs(grid, row, col, visited);
+                    bfs(grid, row, col, visited);
+
                 }
             }
         }
