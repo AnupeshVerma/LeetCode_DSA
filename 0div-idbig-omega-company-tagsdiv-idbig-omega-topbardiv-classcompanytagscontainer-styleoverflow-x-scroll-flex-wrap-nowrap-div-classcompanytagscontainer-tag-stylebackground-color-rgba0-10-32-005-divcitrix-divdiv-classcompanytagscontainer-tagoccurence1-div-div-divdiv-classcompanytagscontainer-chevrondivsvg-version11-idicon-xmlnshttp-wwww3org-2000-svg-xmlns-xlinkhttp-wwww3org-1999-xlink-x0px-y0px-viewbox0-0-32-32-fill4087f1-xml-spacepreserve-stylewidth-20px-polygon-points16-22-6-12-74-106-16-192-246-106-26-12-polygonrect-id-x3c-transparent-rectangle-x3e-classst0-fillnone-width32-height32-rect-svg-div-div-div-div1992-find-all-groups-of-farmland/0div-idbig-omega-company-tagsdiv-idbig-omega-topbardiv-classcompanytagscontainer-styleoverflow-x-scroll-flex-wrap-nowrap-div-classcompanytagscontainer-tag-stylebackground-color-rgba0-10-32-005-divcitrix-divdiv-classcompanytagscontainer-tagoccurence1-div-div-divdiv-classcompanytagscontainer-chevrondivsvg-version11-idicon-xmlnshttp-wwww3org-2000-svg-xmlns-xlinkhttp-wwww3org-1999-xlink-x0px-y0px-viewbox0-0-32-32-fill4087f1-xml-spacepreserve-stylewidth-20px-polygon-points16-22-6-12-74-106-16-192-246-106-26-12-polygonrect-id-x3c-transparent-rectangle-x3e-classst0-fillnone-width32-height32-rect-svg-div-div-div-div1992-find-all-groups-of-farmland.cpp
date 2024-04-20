@@ -7,7 +7,7 @@ private:
     int drow[4] = {-1, 0, 1, 0};
     int dcol[4] = {0, 1, 0, -1};
     
-    void dfs(vector<vector<int>>& land, int row, int col, int &r2, int& c2)
+    void dfs(vector<vector<int>>& land, int row, int col, int& r2, int& c2)
     {
         visited[row][col] = 1;
         
@@ -29,6 +29,35 @@ private:
         return;
     }
     
+    void bfs(vector<vector<int>>& land, int row, int col, int& r2, int& c2)
+    {
+        queue<pair<int, int>>q;
+        q.push({row, col});
+        
+        while(!q.empty())
+        {
+            auto [row, col] = q.front();
+            q.pop();
+            
+            for(int i=0; i<4; i++)
+            {
+                int newRow = row + drow[i];
+                int newCol = col + dcol[i];
+
+                if(newRow>=0 && newRow<m && newCol>=0 && newCol<n)
+                {
+                    if(!visited[newRow][newCol] && land[newRow][newCol]==1)
+                    {
+                        r2 = max(r2, newRow);
+                        c2 = max(c2, newCol);
+                        q.push({newRow, newCol});
+                        visited[newRow][newCol] = 1;
+                    }
+                }
+            }
+        }
+    }
+    
 public:
     vector<vector<int>> findFarmland(vector<vector<int>>& land) {
         m = land.size();
@@ -43,7 +72,10 @@ public:
                 {
                     int r1 = row, c1 = col;
                     int r2 = row, c2 = col;
-                    dfs(land, row, col, r2, c2);
+                    
+                    // dfs(land, row, col, r2, c2);
+                    bfs(land, row, col, r2, c2);
+                    
                     ans.push_back({r1, c1, r2, c2});
                     
                 }
