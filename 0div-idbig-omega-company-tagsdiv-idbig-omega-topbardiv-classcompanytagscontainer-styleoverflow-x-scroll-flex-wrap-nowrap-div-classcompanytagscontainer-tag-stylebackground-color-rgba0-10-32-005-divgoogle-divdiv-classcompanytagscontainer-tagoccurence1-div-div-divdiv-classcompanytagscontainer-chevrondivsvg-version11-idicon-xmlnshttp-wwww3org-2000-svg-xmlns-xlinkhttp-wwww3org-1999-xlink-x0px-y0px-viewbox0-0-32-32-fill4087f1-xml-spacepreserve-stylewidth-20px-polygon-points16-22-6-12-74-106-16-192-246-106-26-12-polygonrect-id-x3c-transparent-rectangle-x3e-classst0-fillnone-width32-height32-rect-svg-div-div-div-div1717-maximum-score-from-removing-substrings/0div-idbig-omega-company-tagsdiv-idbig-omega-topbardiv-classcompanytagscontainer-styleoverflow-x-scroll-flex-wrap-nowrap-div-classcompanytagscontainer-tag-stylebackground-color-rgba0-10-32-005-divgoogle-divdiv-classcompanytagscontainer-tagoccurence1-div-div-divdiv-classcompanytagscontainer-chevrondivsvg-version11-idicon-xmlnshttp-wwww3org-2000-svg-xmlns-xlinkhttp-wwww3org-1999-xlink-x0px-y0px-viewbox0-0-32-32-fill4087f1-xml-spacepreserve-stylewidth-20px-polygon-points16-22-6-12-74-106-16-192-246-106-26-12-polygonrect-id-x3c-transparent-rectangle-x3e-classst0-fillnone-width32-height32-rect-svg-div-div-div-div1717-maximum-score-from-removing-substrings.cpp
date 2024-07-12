@@ -28,12 +28,10 @@ public:
         for(int i=0; i<s.size(); i++)
         {
             s[j++] = s[i];
-            
             if(j>1 && s[j-2]==toRemove[0] && s[j-1]==toRemove[1])
             {
-                j -=2;
+                j -= 2;
                 score += points;
-                
             }
         }
          s.erase(s.begin() + j, s.end());
