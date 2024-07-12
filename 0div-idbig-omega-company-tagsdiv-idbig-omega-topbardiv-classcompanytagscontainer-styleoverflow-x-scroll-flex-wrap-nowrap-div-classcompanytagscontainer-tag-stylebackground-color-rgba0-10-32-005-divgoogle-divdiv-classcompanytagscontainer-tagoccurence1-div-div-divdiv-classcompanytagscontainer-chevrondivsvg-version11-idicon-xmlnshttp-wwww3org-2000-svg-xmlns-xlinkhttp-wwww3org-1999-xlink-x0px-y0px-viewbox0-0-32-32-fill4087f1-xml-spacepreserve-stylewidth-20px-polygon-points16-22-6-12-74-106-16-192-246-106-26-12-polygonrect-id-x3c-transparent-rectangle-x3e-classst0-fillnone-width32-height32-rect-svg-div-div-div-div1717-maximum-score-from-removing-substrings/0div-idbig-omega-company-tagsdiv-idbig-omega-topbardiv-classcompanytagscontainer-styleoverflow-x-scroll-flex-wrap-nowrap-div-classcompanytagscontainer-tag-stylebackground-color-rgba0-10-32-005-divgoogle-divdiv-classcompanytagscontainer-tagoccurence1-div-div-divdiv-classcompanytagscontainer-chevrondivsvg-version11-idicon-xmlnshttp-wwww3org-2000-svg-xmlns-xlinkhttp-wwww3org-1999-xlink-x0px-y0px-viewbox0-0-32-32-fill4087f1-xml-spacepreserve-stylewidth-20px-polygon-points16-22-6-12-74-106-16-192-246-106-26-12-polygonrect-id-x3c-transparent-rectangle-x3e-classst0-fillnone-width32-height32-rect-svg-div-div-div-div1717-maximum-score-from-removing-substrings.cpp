@@ -23,18 +23,20 @@ public:
     int removeSubstring(string& s, string toRemove, int points)
     {
         int score = 0;
-        int j = 0;
+        string sAfterRemoval = "";
         
         for(int i=0; i<s.size(); i++)
         {
-            s[j++] = s[i];
-            if(j>1 && s[j-2]==toRemove[0] && s[j-1]==toRemove[1])
+            sAfterRemoval += s[i];
+            int size  = sAfterRemoval.size();
+            if(size>1 && sAfterRemoval[size-2]==toRemove[0] && sAfterRemoval[size-1]==toRemove[1])
             {
-                j -= 2;
+                sAfterRemoval.erase(sAfterRemoval.end()-2, sAfterRemoval.end());
                 score += points;
+                
             }
         }
-         s.erase(s.begin() + j, s.end());
+        s = sAfterRemoval;
         return score;
     }
 };
