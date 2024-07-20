@@ -43,7 +43,7 @@ public:
         int m = colSum.size();
         
         // Greedy approach --> O(nxm)
-        return greedy(rowSum, colSum, n, m);
+        // return greedy(rowSum, colSum, n, m);
         
         // Time optimized --> O(n+m)
         return optimized(rowSum, colSum, n, m);
