@@ -22,6 +22,31 @@ private:
     }
 
 
+    int bottomUpDP(vector<vector<int>>& grid, vector<vector<int>>& dp){
+        int ans = 0;
+
+        for(int i=0; i<TOTAL_ROW; i++)
+            dp[i][0] = 1;
+
+        int max_moves = 0;
+        for(int col=1; col<TOTAL_COL; col++) {
+            for(int row=0; row<TOTAL_ROW; row++) {
+                if(grid[row][col] > grid[row][col-1] && dp[row][col - 1] > 0)
+                    dp[row][col] = max(dp[row][col], 1 + dp[row][col-1]);
+                
+                if(row-1 >= 0 && grid[row][col] > grid[row-1][col-1] && dp[row-1][col - 1] > 0)
+                    dp[row][col] = max(dp[row][col], 1 + dp[row-1][col-1]);
+
+                if(row+1 < TOTAL_ROW && grid[row][col] > grid[row+1][col-1] && dp[row+1][col - 1] > 0)
+                    dp[row][col] = max(dp[row][col], 1 + dp[row+1][col-1]);
+
+                max_moves = max(max_moves, dp[row][col] -1); 
+            }
+        }
+        return max_moves;
+    }
+
+
 public:
     int maxMoves(vector<vector<int>>& grid) {
         int ans = 0;
@@ -29,6 +54,8 @@ public:
         TOTAL_COL = grid[0].size();
 
         vector<vector<int>> dp(TOTAL_ROW, vector<int>(TOTAL_COL, -1));
+
+        return bottomUpDP(grid, dp);
 
         for(int row=0; row<TOTAL_ROW; row++)
             ans = max(ans, topDownDP(grid, row, 0, dp));
