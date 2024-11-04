@@ -16,10 +16,30 @@ private:
     }
     
     
+    string manipulation(string word, int n) {
+        string comp = "";
+        int i = 0;
+        
+        while(i < n) {
+            int count = 0;
+            char curr = word[i];
+            
+            while(i<n && curr==word[i] && count<9) {
+                count++;
+                i++;
+            }
+            comp += to_string(count) + curr;
+        }
+        return comp;
+    }
+    
+    
 public:
     string compressedString(string word) {
         int n = word.size();
         
-        return bruteForce(word, n);
+        // return bruteForce(word, n);
+        
+        return manipulation(word, n);
     }
 };
