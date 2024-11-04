@@ -7,14 +7,11 @@ private:
         for(int i=0; i<n-1; i++) {
             count++;
             if (count == 9 || word[i] != word[i+1]) {
-                comp += to_string(count);
-                comp += word[i];
+                comp += to_string(count) + word[i];
                 count = 0;
             }
         }
-            comp += to_string(count+1);
-            comp += word[n-1];
-        
+        comp += to_string(count+1) + word[n-1];
         return comp;
     }
     
