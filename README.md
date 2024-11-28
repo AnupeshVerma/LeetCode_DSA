@@ -40,4 +40,12 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 |  |
 | ------- |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
+## Linked List
+|  |
+| ------- |
+| [0838-design-linked-list](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0838-design-linked-list) |
+## Design
+|  |
+| ------- |
+| [0838-design-linked-list](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0838-design-linked-list) |
 <!---LeetCode Topics End-->
