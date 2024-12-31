@@ -1,25 +1,41 @@
 class Solution {
 public:
-    int f(vector<int>&days,vector<int>&costs,int i,vector<int>&dp){
-        if(i>=days.size())return 0;
-
-        if(dp[i]!=-1)return dp[i];
-        int op1=costs[0]+f(days,costs,i+1,dp);
-        int j;
-        for(j=i;j<days.size() && days[i]+7>days[j];j++);
-        int op2=costs[1]+f(days,costs,j,dp);
-        for(j=i;j<days.size() && days[i]+30>days[j];j++);
-        int op3=costs[2]+f(days,costs,j,dp);
-
-        return dp[i]=min({op1,op2,op3});
-          
+    unordered_set<int> isTravelNeeded;
+    
+    int solve(vector<int>& dp, vector<int>& days, vector<int>& costs, int currDay) {
+        // If we have iterated over travel days, return 0.
+        if (currDay > days[days.size() - 1]) {
+            return 0;
+        }
+        
+        // If we don't need to travel on this day, move on to next day.
+        if (isTravelNeeded.find(currDay) == isTravelNeeded.end()) {
+            return solve(dp, days, costs, currDay + 1);
+        }
+        
+        // If already calculated, return from here with the stored answer.
+        if (dp[currDay] != -1) {
+            return dp[currDay];
+        }
+        
+        int oneDay = costs[0] + solve(dp, days, costs, currDay + 1);
+        int sevenDay = costs[1] + solve(dp, days, costs, currDay + 7);
+        int thirtyDay = costs[2] + solve(dp, days, costs, currDay + 30);
+        
+        // Store the cost with the minimum of the three options.
+        return dp[currDay] = min(oneDay, min(sevenDay, thirtyDay));
     }
+    
     int mincostTickets(vector<int>& days, vector<int>& costs) {
-        vector<int>dp(days.size(),-1);
-
+        // The last day on which we need to travel.
+        int lastDay = days[days.size() - 1];
+        vector<int> dp(lastDay + 1, -1);
         
-        return f(days,costs,0,dp);
-
+        // Mark the days on which we need to travel.
+        for (int day : days) {
+            isTravelNeeded.insert(day);
+        }
         
+        return solve(dp, days, costs, 1);
     }
 };
