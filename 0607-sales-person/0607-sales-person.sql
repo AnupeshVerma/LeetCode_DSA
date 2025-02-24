@@ -12,6 +12,7 @@ WHERE s.sales_id NOT IN (
 
 -- Using JOIN
 
+/*
 SELECT s.name
 FROM SalesPerson AS s
 WHERE s.sales_id NOT IN (
@@ -21,10 +22,11 @@ WHERE s.sales_id NOT IN (
         WHERE c.name = 'RED'
 );
 
+*/
 
 
 -- Using Common Table Expression
-/*
+
 
 WITH acceptable_sales_ids AS (
     SELECT sales_id FROM Orders
@@ -35,4 +37,3 @@ SELECT s.name
 FROM SalesPerson AS s
 WHERE s.sales_id NOT IN (SELECT sales_id FROM acceptable_sales_ids);
 
-*/
