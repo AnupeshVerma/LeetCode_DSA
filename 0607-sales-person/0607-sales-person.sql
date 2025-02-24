@@ -1,27 +1,30 @@
-
-####### METHOD 1 #######
-
--- SELECT s.name
--- FROM SalesPerson AS s
--- WHERE s.sales_id NOT IN (
---     SELECT o.sales_id
---     FROM Orders AS o
---     WHERE o.com_id IN (
---         SELECT c.com_id
---         FROM Company AS c
---         WHERE c.name = 'RED'
---     )
--- )
-
-
-####### METHOD 2 ######
-
+-- Using Subqueries
+/*
 SELECT s.name
 FROM SalesPerson AS s
 WHERE s.sales_id NOT IN (
-    SELECT o.sales_id
-    FROM Orders AS o
-    JOIN Company AS c
-    ON o.com_id = c.com_id
-    WHERE c.name = 'RED'
+        SELECT sales_id FROM Orders
+        WHERE com_id = (SELECT com_id FROM Company WHERE name = 'RED')
+);
+
+*/
+
+
+-- Using JOIN
+
+
+
+
+
+-- Using Common Table Expression
+
+
+WITH acceptable_sales_ids AS (
+    SELECT sales_id FROM Orders
+    WHERE com_id = (SELECT  com_id FROM Company WHERE name = 'RED')
 )
+
+SELECT s.name
+FROM SalesPerson AS s
+WHERE s.sales_id NOT IN (SELECT sales_id FROM acceptable_sales_ids);
+
