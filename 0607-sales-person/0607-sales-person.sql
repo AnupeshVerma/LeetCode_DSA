@@ -1,5 +1,5 @@
 -- Using Subqueries
-/*
+
 SELECT s.name
 FROM SalesPerson AS s
 WHERE s.sales_id NOT IN (
@@ -7,22 +7,13 @@ WHERE s.sales_id NOT IN (
         WHERE com_id = (SELECT com_id FROM Company WHERE name = 'RED')
 );
 
-*/
+
 
 
 -- Using JOIN
 
-/*
-SELECT s.name
-FROM SalesPerson AS s
-WHERE s.sales_id NOT IN (
-        SELECT sales_id FROM Orders
-        JOIN Company AS c
-        USING (com_id)
-        WHERE c.name = 'RED'
-);
 
-*/
+
 
 
 -- Using Common Table Expression
@@ -38,15 +29,3 @@ FROM SalesPerson AS s
 WHERE s.sales_id NOT IN (SELECT sales_id FROM acceptable_sales_ids);
 
 */
-
-
--- Using EXCEPT
-
-SELECT name
-FROM SalesPerson
-WHERE sales_id IN (
-    SELECT sales_id FROM SalesPerson
-    EXCEPT
-    SELECT sales_id FROM Orders
-    WHERE com_id = (SELECT com_id FROM Company WHERE name = 'RED')
-);
