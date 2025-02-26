@@ -1,3 +1,23 @@
+-- Using SELF JOIN
+
+
+SELECT DISTINCT a.id, a.visit_date, a.people
+FROM Stadium a, Stadium b, Stadium c
+WHERE
+    a.people >= 100 AND b.people >= 100 AND c.people >= 100 
+    AND (
+        (a.id - b.id = 1 AND b.id - c.id = 1)
+        OR
+        (b.id - a.id = 1 AND c.id - b.id = 1)
+        OR
+        (a.id - c.id = 1 AND b.id - a.id = 1)
+    )
+
+
+
+
+-- Using WINDOW Function
+/*
 
 WITH cte AS (
     SELECT 
@@ -21,3 +41,7 @@ WHERE
     OR
     (id - last_id = 1 AND last_id - second_last_id = 1)
 ORDER BY visit_date;
+
+*/
+
+
