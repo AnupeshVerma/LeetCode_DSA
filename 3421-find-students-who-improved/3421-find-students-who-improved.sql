@@ -19,6 +19,8 @@ ORDER BY student_id, subject;
 
 
 
+-- Using JOIN and Subqueries
+
 
 SELECT 
     f.student_id,
