@@ -23,16 +23,16 @@ ORDER BY student_id, subject;
 SELECT 
     f.student_id,
     f.subject,
-    f.score as first_score,
-    l.score as latest_score
+    f.score AS first_score,
+    l.score AS latest_score
 FROM scores AS f 
-JOIN scores l 
+JOIN scores AS l 
 ON 
     f.student_id = l.student_id AND 
     f.subject = l.subject AND
     f.exam_date != l.exam_date  
 WHERE 
     f.score < l.score AND
-    f.exam_date = (SELECT min(exam_date) FROM scores WHERE f.student_id = student_id AND f.subject = subject) AND
-    l.exam_date = (SELECT max(exam_date) FROM scores WHERE l.student_id = student_id AND l.subject = subject)
-ORDER BY f.student_id,f.subject;
+    f.exam_date = (SELECT min(exam_date) FROM scores WHERE student_id = f.student_id AND subject = f.subject) AND
+    l.exam_date = (SELECT max(exam_date) FROM scores WHERE student_id = l.student_id AND subject = l.subject)
+ORDER BY f.student_id, f.subject;
