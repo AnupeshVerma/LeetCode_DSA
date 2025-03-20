@@ -1,3 +1,7 @@
-# Write your MySQL query statement below
-
-SELECT eu.unique_id, e.name FROM employees AS e LEFT JOIN EmployeeUNI AS eu ON e.id=eu.id;
+-- Write your PostgreSQL query statement below
+SELECT
+    COALESCE(unique_id, NULL) AS unique_id,
+    name
+FROM Employees
+LEFT JOIN EmployeeUNI
+USING (id);
