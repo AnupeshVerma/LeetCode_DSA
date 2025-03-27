@@ -1,12 +1,17 @@
 -- -- Write your PostgreSQL query statement below
--- SELECT 
---     machine_id,
---     ROUND(SUM(
---         CASE WHEN activity_type = 'start' THEN -1*timestamp::INT ELSE timestamp::INT END
---     )/COUNT(*), 3) AS processing_time
--- FROM Activity
--- GROUP BY machine_id
+SELECT 
+    machine_id,
+    ROUND(SUM(
+        CASE WHEN activity_type = 'start' THEN -1*timestamp::NUMERIC ELSE timestamp::NUMERIC END
+    )/COUNT(*)*2, 3) AS processing_time
+FROM Activity
+GROUP BY machine_id
 
+
+
+
+
+/*
 
 SELECT 
     a1.machine_id,
@@ -17,3 +22,5 @@ WHERE
     a1.activity_type = 'end' AND
     a2.activity_type = 'start'
 GROUP BY a1.machine_id;
+
+*/
