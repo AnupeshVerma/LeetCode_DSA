@@ -1,6 +1,3 @@
-# Write your MySQL query statement below
-
-
 SELECT e.name, b.bonus FROM employee AS e 
 LEFT JOIN 
 bonus AS b
