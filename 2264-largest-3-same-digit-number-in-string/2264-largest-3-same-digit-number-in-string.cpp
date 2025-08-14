@@ -14,9 +14,10 @@ private:
         vector<string> sameDigits = {"000", "111", "222", "333", "444", "555","666","777","888","999"};
 
         for(int i=9; i>=0; i--) {
-            for(int j=3; j<num.size(); j++) {
-                int digit = sameDigits[i][0];
-                if(num[i]== digit && num[i-1]==digit && num[i-2]==digit)
+            for(int j=2; j<num.size(); j++) {
+                char digit = sameDigits[i][0];
+                cout<<digit<<" ";
+                if(num[j]==digit && num[j-1]==digit && num[j-2]==digit)
                     return sameDigits[i];
             }
         }
@@ -27,7 +28,7 @@ private:
 public:
     string largestGoodInteger(string num) {
 
-        // return storingDigits(num);
+        return storingDigits(num);
 
         return singleIteration(num);
     }
