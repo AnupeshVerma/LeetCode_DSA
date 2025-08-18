@@ -19,7 +19,7 @@ private:
         // Check for the position of the set bit, should be at odd position
         // 0x55555555 -> 01010101010101010101010101010101
         bool setBitAtOddPlace = n & 0x55555555;
-        return powerOfTwo && setBitAtOddPlace;
+        // return powerOfTwo && setBitAtOddPlace;
 
                     // OR 
 
