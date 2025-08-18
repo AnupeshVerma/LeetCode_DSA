@@ -1,13 +1,19 @@
 class Solution {
+private:
+    bool division(int n) {
+    while(n % 4 == 0)
+        n /= 4;
+    
+    return n==1;
+    }
+
+
+
 public:
     bool isPowerOfFour(int n) {
-        long long int val = 1;
-        while(val <= n)
-        {
-            if(val == n)
-                return true;
-            val*=4;
-        }
-        return false;
+        if(n <= 0)
+            return false;
+            
+        return division(n);    
     }
 };
