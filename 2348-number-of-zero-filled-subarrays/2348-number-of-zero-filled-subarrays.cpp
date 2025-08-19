@@ -1,20 +1,17 @@
 class Solution {
 public:
-
     long long zeroFilledSubarray(vector<int>& nums) {
-        long long zero=0, ans=0;
-        for(auto i : nums)
-        {
-            if(i==0)
-                zero++;
-            else
-            {
-                ans += zero*(zero+1)/2;
-                zero = 0;
+        long long result = 0, zeroCount = 0;
+        for (int num : nums) {
+            if (num != 0) {
+                result += zeroCount * (zeroCount + 1) / 2;
+                zeroCount = 0;
             }
+            else
+                zeroCount++;
         }
-        if(zero)
-            ans += zero*(zero+1)/2;
-        return ans;
+        // Add subarrays count for the trailing zeros if present
+        result += zeroCount * (zeroCount + 1) / 2;
+        return result;
     }
 };
