@@ -9,8 +9,8 @@ private:
             return new_pass_ratio - pass_ratio;
         };
 
-        priority_queue<pair<double, int>> pq;
         // Initialize the priority queue with initial gains for each class
+        priority_queue<pair<double, int>> pq;
         for (int i = 0; i < n; i++) {
             double gain_in_pass_ratio = calculateGain(classes[i][0], classes[i][1]);
             pq.push({gain_in_pass_ratio, i});
