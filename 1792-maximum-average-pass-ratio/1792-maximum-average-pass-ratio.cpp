@@ -1,42 +1,42 @@
-#include <vector>
-#include <queue>
-using namespace std;
-
 class Solution {
-public:
-    double maxAverageRatio(vector<vector<int>>& classes, int extraStudents) {
-        // Priority queue to store the maximum gain first
-        auto gain = [](const pair<int, int>& cls) {
-            int pass = cls.first, total = cls.second;
-            return double(pass + 1) / (total + 1) - double(pass) / total;
+private:
+    double priorityQueue(vector<vector<int>>& classes, int extraStudents, int n) {
+        // Lambda to calculate the gain in pass ratio
+        auto calculateGain = [](int pass, int total) {
+            double pass_ratio = (double)pass / total;
+            double new_pass_ratio = (double)(pass + 1) / (total + 1);
+
+            return new_pass_ratio - pass_ratio;
         };
 
-        priority_queue<pair<double, pair<int, int>>> pq;
-        for (auto& cls : classes) {
-            int pass = cls[0], total = cls[1];
-            pq.push({gain({pass, total}), {pass, total}});
+        priority_queue<pair<double, int>> pq;
+        // Initialize the priority queue with initial gains for each class
+        for (int i = 0; i < n; i++) {
+            double gain_in_pass_ratio = calculateGain(classes[i][0], classes[i][1]);
+            pq.push({gain_in_pass_ratio, i});
         }
 
-        // Distribute the extra students
-        while (extraStudents--) {
-            auto [curr_gain, curr_class] = pq.top();
+        while(extraStudents--) {
+            auto [gain, index] = pq.top();
             pq.pop();
 
-            int pass = curr_class.first, total = curr_class.second;
+            classes[index][0]++;
+            classes[index][1]++;
 
-            // Add one student to the current class
-            pass++, total++;
-            pq.push({gain({pass, total}), {pass, total}});
+            double gain_in_pass_ratio = calculateGain(classes[index][0], classes[index][1]);
+            pq.push({gain_in_pass_ratio, index});
         }
+        double pass_ratio_sum = 0;
+        for(auto cls : classes)
+            pass_ratio_sum += (double)cls[0] / cls[1];
+        
+        return pass_ratio_sum / n;
+    }
 
-        // Calculate the final average pass ratio
-        double total_ratio = 0;
-        while (!pq.empty()) {
-            auto [_, cls] = pq.top();
-            pq.pop();
-            total_ratio += double(cls.first) / cls.second;
-        }
 
-        return total_ratio / classes.size();
+public:
+    double maxAverageRatio(vector<vector<int>>& classes, int extraStudents) {
+        int n = classes.size();
+        return priorityQueue(classes, extraStudents, n);
     }
 };
