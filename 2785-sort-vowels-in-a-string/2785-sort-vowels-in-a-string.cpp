@@ -1,12 +1,16 @@
 class Solution {
 private:
-    string storeAndFill(string s, int n) {
-        vector<char> vowels;
+    string storeSortFill(string s, int n) {
+        // lambda to check vowel or not
+        auto isVowel = [](char c) -> bool {
+            char lc = tolower(c);
+            return lc == 'a' || lc == 'e' || lc == 'i' || lc == 'o' || lc == 'u';
+        };
 
         // Store the vowels
+        vector<char> vowels;
         for(char c : s){
-            char lc = tolower(c);
-            if(lc == 'a' || lc == 'e' || lc == 'i' || lc == 'o' || lc == 'u')
+            if(isVowel(c))
                 vowels.push_back(c);
         }
 
@@ -14,10 +18,10 @@ private:
         sort(vowels.begin(), vowels.end());
         int i = 0;
         for(char& c : s){
-            char lc = tolower(c);
-            if(lc == 'a' || lc == 'e' || lc == 'i' || lc == 'o' || lc == 'u')
+            if(isVowel(c))
                 c = vowels[i++];
         }
+
         return s;
     }
 
@@ -26,6 +30,6 @@ public:
     string sortVowels(string s) {
         int n = s.size();
 
-        return storeAndFill(s, n);
+        return storeSortFill(s, n);
     }
 };
