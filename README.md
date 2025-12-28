@@ -14,6 +14,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 ## Array
 |  |
 | ------- |
+| [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
 | [3188-find-champion-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3188-find-champion-i) |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
@@ -31,6 +32,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 ## Matrix
 |  |
 | ------- |
+| [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
 | [3188-find-champion-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3188-find-champion-i) |
 ## Heap (Priority Queue)
@@ -53,4 +55,8 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 |  |
 | ------- |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
+## Binary Search
+|  |
+| ------- |
+| [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 <!---LeetCode Topics End-->
