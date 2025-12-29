@@ -59,4 +59,20 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 |  |
 | ------- |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
+## Hash Table
+|  |
+| ------- |
+| [0756-pyramid-transition-matrix](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0756-pyramid-transition-matrix) |
+## String
+|  |
+| ------- |
+| [0756-pyramid-transition-matrix](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0756-pyramid-transition-matrix) |
+## Backtracking
+|  |
+| ------- |
+| [0756-pyramid-transition-matrix](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0756-pyramid-transition-matrix) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0756-pyramid-transition-matrix](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0756-pyramid-transition-matrix) |
 <!---LeetCode Topics End-->
