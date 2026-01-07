@@ -80,12 +80,15 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 |  |
 | ------- |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
+| [1339-maximum-product-of-splitted-binary-tree](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 ## Depth-First Search
 |  |
 | ------- |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
+| [1339-maximum-product-of-splitted-binary-tree](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 ## Binary Tree
 |  |
 | ------- |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
+| [1339-maximum-product-of-splitted-binary-tree](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 <!---LeetCode Topics End-->
