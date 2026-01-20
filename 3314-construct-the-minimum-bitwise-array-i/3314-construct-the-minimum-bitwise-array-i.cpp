@@ -1,8 +1,6 @@
 class Solution {
-public:
-    vector<int> minBitwiseArray(vector<int>& nums) {
-        int n = nums.size();
-
+private:
+    vector<int> bruteForce(vector<int>& nums, int n) {
         for(int i=0; i<n; i++) {
             int temp = nums[i];
             for(int j=1; j<nums[i]; j++){
@@ -15,5 +13,13 @@ public:
                 nums[i] = -1;
         }
         return nums;
+    }
+public:
+    vector<int> minBitwiseArray(vector<int>& nums) {
+        int n = nums.size();
+
+        // return bitManipulation(nums);
+
+        return bruteForce(nums, n);
     }
 };
