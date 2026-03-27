@@ -18,6 +18,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [1458-max-dot-product-of-two-subsequences](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1458-max-dot-product-of-two-subsequences) |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1886-determine-whether-matrix-can-be-obtained-by-rotation) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
+| [2946-matrix-similarity-after-cyclic-shifts](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [3188-find-champion-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3188-find-champion-i) |
 | [3314-construct-the-minimum-bitwise-array-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3314-construct-the-minimum-bitwise-array-i) |
 | [3315-construct-the-minimum-bitwise-array-ii](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3315-construct-the-minimum-bitwise-array-ii) |
@@ -42,6 +43,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1886-determine-whether-matrix-can-be-obtained-by-rotation) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
+| [2946-matrix-similarity-after-cyclic-shifts](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [3188-find-champion-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3188-find-champion-i) |
 | [3546-equal-sum-grid-partition-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3546-equal-sum-grid-partition-i) |
 ## Heap (Priority Queue)
@@ -63,6 +65,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 ## Math
 |  |
 | ------- |
+| [2946-matrix-similarity-after-cyclic-shifts](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
 ## Binary Search
 |  |
@@ -117,4 +120,8 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 |  |
 | ------- |
 | [3546-equal-sum-grid-partition-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3546-equal-sum-grid-partition-i) |
+## Simulation
+|  |
+| ------- |
+| [2946-matrix-similarity-after-cyclic-shifts](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 <!---LeetCode Topics End-->
