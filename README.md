@@ -80,6 +80,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 |  |
 | ------- |
 | [0756-pyramid-transition-matrix](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0756-pyramid-transition-matrix) |
+| [2839-check-if-strings-can-be-made-equal-with-operations-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/2839-check-if-strings-can-be-made-equal-with-operations-i) |
 ## Backtracking
 |  |
 | ------- |
