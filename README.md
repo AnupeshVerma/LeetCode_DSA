@@ -26,6 +26,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
 | [3517-shortest-distance-after-road-addition-queries-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3517-shortest-distance-after-road-addition-queries-i) |
 | [3546-equal-sum-grid-partition-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3546-equal-sum-grid-partition-i) |
+| [3653-xor-after-range-multiplication-queries-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3653-xor-after-range-multiplication-queries-i) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -127,4 +128,9 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 |  |
 | ------- |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
+| [3653-xor-after-range-multiplication-queries-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3653-xor-after-range-multiplication-queries-i) |
+## Divide and Conquer
+|  |
+| ------- |
+| [3653-xor-after-range-multiplication-queries-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3653-xor-after-range-multiplication-queries-i) |
 <!---LeetCode Topics End-->
