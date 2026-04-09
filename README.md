@@ -137,6 +137,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1068-product-sales-analysis-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1068-product-sales-analysis-i/) | Easy |
+| [1393-capital-gainloss](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1393-capital-gainloss/) | Medium |
 | [1683-invalid-tweets](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1683-invalid-tweets/) | Easy |
 | [1693-daily-leads-and-partners](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1693-daily-leads-and-partners/) | Easy |
 | [1741-find-total-time-spent-by-each-employee](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1741-find-total-time-spent-by-each-employee/) | Easy |
