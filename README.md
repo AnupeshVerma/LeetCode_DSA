@@ -136,6 +136,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 ## Database
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0175-combine-two-tables](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/0175-combine-two-tables/) | Easy |
 | [0627-swap-sex-of-employees](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/0627-swap-sex-of-employees/) | Easy |
 | [1068-product-sales-analysis-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1068-product-sales-analysis-i/) | Easy |
 | [1378-replace-employee-id-with-the-unique-identifier](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1378-replace-employee-id-with-the-unique-identifier/) | Easy |
