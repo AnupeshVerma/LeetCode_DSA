@@ -143,4 +143,5 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [1757-recyclable-and-low-fat-products](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1757-recyclable-and-low-fat-products/) | Easy |
 | [1795-rearrange-products-table](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1795-rearrange-products-table/) | Easy |
 | [2356-number-of-unique-subjects-taught-by-each-teacher](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/2356-number-of-unique-subjects-taught-by-each-teacher/) | Easy |
+| [3475-dna-pattern-recognition](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/3475-dna-pattern-recognition/) | Medium |
 <!---LeetCode Topics End-->
