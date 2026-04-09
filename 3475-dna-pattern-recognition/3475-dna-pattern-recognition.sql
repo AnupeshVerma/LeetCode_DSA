@@ -1,7 +1,7 @@
 SELECT 
     *,
-    IF(LEFT(dna_sequence, 3) = 'ATG', 1, 0) AS has_start,
-    IF(RIGHT(dna_sequence, 3) IN ('TAA', 'TAG', 'TGA'), 1, 0) AS has_stop,
-    IF(dna_sequence LIKE '%ATAT%', 1, 0) AS has_atat,
-    IF(dna_sequence LIKE '%GGG%', 1, 0) AS has_ggg
+    CASE WHEN LEFT(dna_sequence, 3) = 'ATG' THEN 1 ELSE 0 END AS has_start,
+    CASE WHEN RIGHT(dna_sequence, 3) IN ('TAA', 'TAG', 'TGA') THEN 1 ELSE 0 END AS has_stop,
+    CASE WHEN dna_sequence LIKE '%ATAT%' THEN 1 ELSE 0 END has_atat,
+    CASE WHEN dna_sequence LIKE '%GGG%' THEN 1 ELSE 0 END has_ggg
 FROM Samples
