@@ -136,6 +136,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 ## Database
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1693-daily-leads-and-partners](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1693-daily-leads-and-partners/) | Easy |
 | [1757-recyclable-and-low-fat-products](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1757-recyclable-and-low-fat-products/) | Easy |
 | [2356-number-of-unique-subjects-taught-by-each-teacher](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/2356-number-of-unique-subjects-taught-by-each-teacher/) | Easy |
 <!---LeetCode Topics End-->
