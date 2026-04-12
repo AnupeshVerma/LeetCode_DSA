@@ -144,6 +144,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [0577-employee-bonus](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/0577-employee-bonus/) | Easy |
 | [0627-swap-sex-of-employees](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/0627-swap-sex-of-employees/) | Easy |
 | [1068-product-sales-analysis-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1068-product-sales-analysis-i/) | Easy |
+| [1251-average-selling-price](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1251-average-selling-price/) | Easy |
 | [1378-replace-employee-id-with-the-unique-identifier](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1378-replace-employee-id-with-the-unique-identifier/) | Easy |
 | [1393-capital-gainloss](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1393-capital-gainloss/) | Medium |
 | [1484-group-sold-products-by-the-date](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1484-group-sold-products-by-the-date/) | Easy |
