@@ -20,6 +20,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [1848-minimum-distance-to-the-target-element](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1848-minimum-distance-to-the-target-element/) | Easy |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1886-determine-whether-matrix-can-be-obtained-by-rotation) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
+| [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/2515-shortest-distance-to-target-string-in-a-circular-array/) | Easy |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [3188-find-champion-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3188-find-champion-i) |
 | [3314-construct-the-minimum-bitwise-array-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3314-construct-the-minimum-bitwise-array-i) |
@@ -87,6 +88,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0756-pyramid-transition-matrix](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0756-pyramid-transition-matrix) |
+| [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/2515-shortest-distance-to-target-string-in-a-circular-array/) | Easy |
 | [2839-check-if-strings-can-be-made-equal-with-operations-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/2839-check-if-strings-can-be-made-equal-with-operations-i) |
 ## Backtracking
 | Problem Name | Difficulty |
