@@ -25,6 +25,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [3188-find-champion-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3188-find-champion-i) |
 | [3314-construct-the-minimum-bitwise-array-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3314-construct-the-minimum-bitwise-array-i) |
 | [3315-construct-the-minimum-bitwise-array-ii](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3315-construct-the-minimum-bitwise-array-ii) |
+| [3488-closest-equal-element-queries](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/3488-closest-equal-element-queries/) | Medium |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
 | [3517-shortest-distance-after-road-addition-queries-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3517-shortest-distance-after-road-addition-queries-i) |
 | [3546-equal-sum-grid-partition-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3546-equal-sum-grid-partition-i) |
@@ -77,11 +78,13 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
+| [3488-closest-equal-element-queries](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/3488-closest-equal-element-queries/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0756-pyramid-transition-matrix](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0756-pyramid-transition-matrix) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
+| [3488-closest-equal-element-queries](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/3488-closest-equal-element-queries/) | Medium |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/3740-minimum-distance-between-three-equal-elements-i/) | Easy |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/3741-minimum-distance-between-three-equal-elements-ii/) | Medium |
 ## String
