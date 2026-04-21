@@ -17,6 +17,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [0118-pascals-triangle](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0118-pascals-triangle) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1458-max-dot-product-of-two-subsequences](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1458-max-dot-product-of-two-subsequences) |
+| [1722-minimize-hamming-distance-after-swap-operations](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1722-minimize-hamming-distance-after-swap-operations/) | Medium |
 | [1848-minimum-distance-to-the-target-element](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1848-minimum-distance-to-the-target-element/) | Easy |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1886-determine-whether-matrix-can-be-obtained-by-rotation) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
@@ -115,6 +116,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1339-maximum-product-of-splitted-binary-tree) |
+| [1722-minimize-hamming-distance-after-swap-operations](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1722-minimize-hamming-distance-after-swap-operations/) | Medium |
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -163,4 +165,8 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [1890-the-latest-login-in-2020](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1890-the-latest-login-in-2020/) | Easy |
 | [2356-number-of-unique-subjects-taught-by-each-teacher](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/2356-number-of-unique-subjects-taught-by-each-teacher/) | Easy |
 | [3475-dna-pattern-recognition](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/3475-dna-pattern-recognition/) | Medium |
+## Union-Find
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1722-minimize-hamming-distance-after-swap-operations](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1722-minimize-hamming-distance-after-swap-operations/) | Medium |
 <!---LeetCode Topics End-->
