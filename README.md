@@ -33,6 +33,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3653-xor-after-range-multiplication-queries-i) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/3740-minimum-distance-between-three-equal-elements-i/) | Easy |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/3741-minimum-distance-between-three-equal-elements-ii/) | Medium |
+| [3742-maximum-path-score-in-a-grid](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/3742-maximum-path-score-in-a-grid/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -54,6 +55,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [3188-find-champion-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3188-find-champion-i) |
 | [3546-equal-sum-grid-partition-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3546-equal-sum-grid-partition-i) |
+| [3742-maximum-path-score-in-a-grid](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/3742-maximum-path-score-in-a-grid/) | Medium |
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -128,6 +130,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | ------- | ------- |
 | [0118-pascals-triangle](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0118-pascals-triangle) |
 | [1458-max-dot-product-of-two-subsequences](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1458-max-dot-product-of-two-subsequences) |
+| [3742-maximum-path-score-in-a-grid](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/3742-maximum-path-score-in-a-grid/) | Medium |
 ## Enumeration
 | Problem Name | Difficulty |
 | ------- | ------- |
