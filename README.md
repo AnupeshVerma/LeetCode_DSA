@@ -87,6 +87,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | ------- | ------- |
 | [0756-pyramid-transition-matrix](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0756-pyramid-transition-matrix) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
+| [1189-maximum-number-of-balloons](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [3488-closest-equal-element-queries](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/3488-closest-equal-element-queries/) | Medium |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/3740-minimum-distance-between-three-equal-elements-i/) | Easy |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/3741-minimum-distance-between-three-equal-elements-ii/) | Medium |
@@ -94,6 +95,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0756-pyramid-transition-matrix](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0756-pyramid-transition-matrix) |
+| [1189-maximum-number-of-balloons](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/2515-shortest-distance-to-target-string-in-a-circular-array/) | Easy |
 | [2839-check-if-strings-can-be-made-equal-with-operations-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/2839-check-if-strings-can-be-made-equal-with-operations-i) |
 ## Backtracking
@@ -172,4 +174,8 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1722-minimize-hamming-distance-after-swap-operations](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1722-minimize-hamming-distance-after-swap-operations/) | Medium |
+## Counting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1189-maximum-number-of-balloons](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1189-maximum-number-of-balloons/) | Easy |
 <!---LeetCode Topics End-->
