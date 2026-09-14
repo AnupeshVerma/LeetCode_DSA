@@ -75,6 +75,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 ## Math
 |  |
 | ------- |
+| [0836-rectangle-overlap](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0836-rectangle-overlap) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
 | [3870-count-commas-in-range](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3870-count-commas-in-range) |
@@ -179,4 +180,8 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 |  |
 | ------- |
 | [1189-maximum-number-of-balloons](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1189-maximum-number-of-balloons/) | Easy |
+## Geometry
+|  |
+| ------- |
+| [0836-rectangle-overlap](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0836-rectangle-overlap) |
 <!---LeetCode Topics End-->
