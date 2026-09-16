@@ -76,6 +76,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 |  |
 | ------- |
 | [0836-rectangle-overlap](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0836-rectangle-overlap) |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
 | [3870-count-commas-in-range](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3870-count-commas-in-range) |
@@ -134,6 +135,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | ------- |
 | [0118-pascals-triangle](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0118-pascals-triangle) |
 | [1458-max-dot-product-of-two-subsequences](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1458-max-dot-product-of-two-subsequences) |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 | [3742-maximum-path-score-in-a-grid](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/3742-maximum-path-score-in-a-grid/) | Medium |
 ## Enumeration
 |  |
@@ -142,6 +144,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 ## Prefix Sum
 |  |
 | ------- |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 | [3546-equal-sum-grid-partition-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3546-equal-sum-grid-partition-i) |
 ## Simulation
 |  |
@@ -184,4 +187,8 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 |  |
 | ------- |
 | [0836-rectangle-overlap](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0836-rectangle-overlap) |
+## Combinatorics
+|  |
+| ------- |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 <!---LeetCode Topics End-->
