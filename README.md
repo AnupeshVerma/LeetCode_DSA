@@ -30,6 +30,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
 | [3517-shortest-distance-after-road-addition-queries-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3517-shortest-distance-after-road-addition-queries-i) |
 | [3546-equal-sum-grid-partition-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3546-equal-sum-grid-partition-i) |
+| [3550-smallest-index-with-digit-sum-equal-to-index](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3550-smallest-index-with-digit-sum-equal-to-index) |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3653-xor-after-range-multiplication-queries-i) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/3740-minimum-distance-between-three-equal-elements-i/) | Easy |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/3741-minimum-distance-between-three-equal-elements-ii/) | Medium |
@@ -79,6 +80,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
+| [3550-smallest-index-with-digit-sum-equal-to-index](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3550-smallest-index-with-digit-sum-equal-to-index) |
 | [3870-count-commas-in-range](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/3870-count-commas-in-range) |
 ## Binary Search
 |  |
