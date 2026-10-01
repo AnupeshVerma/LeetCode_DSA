@@ -99,6 +99,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 ## String
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0020-valid-parentheses) |
 | [0756-pyramid-transition-matrix](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0756-pyramid-transition-matrix) |
 | [1189-maximum-number-of-balloons](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/AnupeshVerma/LeetCode_DSA/tree/main/2515-shortest-distance-to-target-string-in-a-circular-array/) | Easy |
@@ -193,4 +194,12 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 |  |
 | ------- |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
+## Stack
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0020-valid-parentheses) |
+## Bracket Sequences
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/AnupeshVerma/LeetCode_DSA/tree/master/0020-valid-parentheses) |
 <!---LeetCode Topics End-->
